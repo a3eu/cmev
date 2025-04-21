@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <scripts>
+      <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
+    </scripts>
 
     <style>
         body {
@@ -123,22 +126,68 @@
     </header>
     <nav>
         <ul>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#ensembles">Our Ensembles</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#support">Support</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
+        <section id="events">
+            <h2>Events</h2>
+            <p>
+Join us for the inaugrual concert of the Orquesta Típica Tarareando at <a href="https://www.gradusadparnassum.com/events-2">Gradus ad Parnassum Academy</a> recital hall 
+on May 4th, 2025, at 4pm! <a href="https://www.zeffy.com/ticketing/may-the-4th-tango-with-you">CLICK HERE FOR TICKETS!</a>
+</p>
+            <p><center><a href="https://www.zeffy.com/ticketing/may-the-4th-tango-with-you"><img src="may4thtango.png" alt="poster" width="70%" style="padding: 15px;"/></a></center></p>
+        </section>
+        <section id="ensembles">
+            <h2>Our Ensembles</h2>
+            <p>Orquesta Típica <i>Tarareando</i>&nbsp;&mdash;&nbsp;tango orchestra specializing in Argentine Tango music for dancing and listening.</p>
+            <p>Cuarteto <i>¡Ahora, sí!</i>&nbsp;&mdash;&nbsp;tango quartet for milongas and concerts.</p>
+            <p>Duo <i>Luz de neón</i>&nbsp;&mdash;&nbsp;piano/bandoneón/voice duet.</p>
+            <p>To book a milonga, a house concert, a special event, a coaching, or a tango musicality workshop, please contact us.</p>
+        </section>
         <section id="about">
             <h2>About Us</h2>
             <p>Based in San Francisco Bay Area, our mission is to support live performances and training in the genres Argentine Tango and Chamber Music.</p>
-            <p>We are just starting out! More information on our projects coming soon.</p>
         </section>
         <section id="support">
             <h2>Support</h2>
             <p>
-		If you would like to contribute, please contact us directly.
-		We expect to be set up to accept charitable donations by the end of 2024 calendar year as a 501(c)(3) nonprofit.
+                <p>Please support live music by coming to our performances!</p>
+                <p>As is often the case with performing arts groups, ticket sales only cover a fraction of expenses. 
+                If you are in a position to contribute to our cause, please use the donation form below or contact us directly.
+                We are a registered 501(3)(c) nonprofit and your donations are tax-deductible.
+
+                <style>
+                button.zeffy-btn {
+                background-color: #166579;
+                border: none;
+                border-radius: 5px;
+                box-sizing: border-box;
+                color: white;
+                cursor: pointer;
+                left: calc(50% - 75px);
+                margin-top: 20px;
+                margin-botton: 20px;
+                min-height: 50px;
+                min-width: 150px;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                top: calc(50% - 25px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <button class="zeffy-btn" zeffy-form-link="https://www.zeffy.com/embed/donation-form/support-live-music?modal=true">
+            Donate
+        </button> 
+            </p>
+            <p>
+               <img src="qr-code-zeffy-donations.png" alt="QR code"/>
             </p>
         </section>
         <section id="contact">
@@ -147,7 +196,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 ¡Con música en vivo! All rights reserved.</p>
+        <p>&copy; 2025 ¡Con música en vivo! All rights reserved.</p>
     </footer>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
