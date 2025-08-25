@@ -63,7 +63,29 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --legacy-peer-deps
         
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: |
+          echo "Building with: ${{ steps.detect-package-manager.outputs.runner }} next build"
+          ${{ steps.detect-package-manager.outputs.runner }} next build
+
+      - name: Debug build output
+        run: |
+          echo "Build completed. Directory contents:"
+          ls -la
+          echo "Looking for output directories:"
+          find . -maxdepth 2 -type d \( -name "dist" -o -name "out" -o -name ".next" \) -exec ls -la {} \;
+          echo "Checking if dist directory exists:"
+          if [ -d "dist" ]; then
+            echo "✓ dist directory found"
+            ls -la dist/ | head -10
+          else
+            echo "✗ dist directory not found"
+          fi
+          if [ -d "out" ]; then
+            echo "✓ out directory found"
+            ls -la out/ | head -10
+          else
+            echo "✗ out directory not found"
+          fi
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
