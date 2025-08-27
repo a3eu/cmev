@@ -77,34 +77,34 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">September 6, 2025</span>
-                </div>
-                <CardTitle className="font-serif text-xl">Tango Night at Feeling Flow (Palo Alto)</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center gap-2 mb-2">
-                  <Clock className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">5:30&ndash;9PM (live music at 7PM)</span>
-                </div>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">1680 Bryant St, Palo Alto</span>
-                </div>
-                <CardDescription className="mb-4">
-                  Solos, duets, and trios performed by Special guest Yukie (Japan) and the Duo <i>Luz de neón</i>.
-                </CardDescription>
-                <Button variant="outline"
-                        className="w-full bg-transparent"
-                        onClick={() => window.open("https://www.feelingflow.org/tea-tango#register", "_blank")}
-                >
-                  Learn More
-                </Button>
-              </CardContent>
-            </Card>
+            {/*<Card>*/}
+            {/*  <CardHeader>*/}
+            {/*    <div className="flex items-center gap-4 mb-2">*/}
+            {/*      <Calendar className="w-6 h-6 text-primary" />*/}
+            {/*      <span className="text-sm text-muted-foreground">September 6, 2025</span>*/}
+            {/*    </div>*/}
+            {/*    <CardTitle className="font-serif text-xl">Tango Night at Feeling Flow (Palo Alto)</CardTitle>*/}
+            {/*  </CardHeader>*/}
+            {/*  <CardContent>*/}
+            {/*    <div className="flex items-center gap-2 mb-2">*/}
+            {/*      <Clock className="w-4 h-4 text-muted-foreground" />*/}
+            {/*      <span className="text-sm text-muted-foreground">5:30&ndash;9PM (live music at 7PM)</span>*/}
+            {/*    </div>*/}
+            {/*    <div className="flex items-center gap-2 mb-4">*/}
+            {/*      <MapPin className="w-4 h-4 text-muted-foreground" />*/}
+            {/*      <span className="text-sm text-muted-foreground">1680 Bryant St, Palo Alto</span>*/}
+            {/*    </div>*/}
+            {/*    <CardDescription className="mb-4">*/}
+            {/*      Solos, duets, and trios performed by Special guest Yukie (Japan) and the Duo <i>Luz de neón</i>.*/}
+            {/*    </CardDescription>*/}
+            {/*    <Button variant="outline"*/}
+            {/*            className="w-full bg-transparent"*/}
+            {/*            onClick={() => window.open("https://www.feelingflow.org/tea-tango#register", "_blank")}*/}
+            {/*    >*/}
+            {/*      Learn More*/}
+            {/*    </Button>*/}
+            {/*  </CardContent>*/}
+            {/*</Card>*/}
 
             <Card>
               <CardHeader>
