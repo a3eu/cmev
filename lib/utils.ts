@@ -7,7 +7,8 @@ export function cn(...inputs: ClassValue[]) {
 
 // Get the base path for assets - needed for GitHub Pages deployment
 export function getBasePath(): string {
-  return process.env.NODE_ENV === 'production' ? '/cmev-v0' : ''
+  // Since we're using a custom domain (conmusicaenvivo.org), no base path is needed
+  return ''
 }
 
 // Helper to get properly prefixed asset URLs
