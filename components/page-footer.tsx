@@ -53,7 +53,7 @@ export default function PageFooter() {
             </ul>
             <div className="flex gap-3 mt-4">
               <a
-                href="https://facebook.com/conmusicaenvivo"
+                href="https://www.facebook.com/profile.php?id=61567797232060"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
