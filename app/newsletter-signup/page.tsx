@@ -82,7 +82,7 @@ export default function NewsletterSignupPage() {
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLScK-dWjARDlHZ4_nEmx3tsoipnjxtamSOJRNGuIjI_kvyqj6A/viewform?embedded=true"
               width="100%" 
-              height="1000" 
+              height="1200" 
               frameBorder="0" 
               marginHeight={0} 
               marginWidth={0}
