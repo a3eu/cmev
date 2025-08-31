@@ -213,15 +213,14 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2 mb-4">
                   <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">217 S Claremont St, San Mateo, CA</span>
+                  <span className="text-sm text-muted-foreground">1527 South B St San Mateo, CA</span>
                 </div>
                 <CardDescription className="mb-4">
                   Orquesta Típica Tarareando in concert at Gradus ad Parnassum Music Academy in San Mateo.
                 </CardDescription>
                 <Button variant="outline"
                         className="w-full bg-transparent"
-                        onClick={() => window.open("https://motionartscenter.com/milonga-dance-party/", "_blank")}
-                >
+                        onClick={() => window.open("https://www.zeffy.com/en-US/ticketing/tango-y-mas", "_blank")}>
                   Learn More
                 </Button>
               </CardContent>
