@@ -216,7 +216,7 @@ export default function HomePage() {
                   <span className="text-sm text-muted-foreground">217 S Claremont St, San Mateo, CA</span>
                 </div>
                 <CardDescription className="mb-4">
-                  Orquesta Típica Tarareando performs at Milonga Sentimental at the Motion Arts Center in San Mateo
+                  Orquesta Típica Tarareando in concert at Gradus ad Parnassum Music Academy in San Mateo.
                 </CardDescription>
                 <Button variant="outline"
                         className="w-full bg-transparent"
