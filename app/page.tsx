@@ -8,27 +8,36 @@ import PageFooter from "@/components/page-footer"
 import { getAssetUrl } from "@/lib/utils"
 
 export default function HomePage() {
+  // Check if current date is before September 15, 2025 midnight Pacific time
+  const showBanner = () => {
+    const now = new Date();
+    const cutoffDate = new Date('2025-09-15T07:00:00Z'); // Midnight PDT is UTC-7, so 7:00 UTC
+    return now < cutoffDate;
+  };
+
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
-      {/* Banner Section */}
-      <section className="relative">
-        <div className="relative">
-          <img 
-            src={getAssetUrl("/Tarareando-Upcoming-Website-Sep2025.png")} 
-            alt="Tarareando Upcoming Events September 2025" 
-            className="w-full h-auto object-cover"
-          />
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-            <Button 
-              size="lg"
-              className="bg-red-600 hover:bg-red-700 text-white font-bold px-12 py-6 text-xl"
-              onClick={() => window.open("https://www.zeffy.com/en-US/ticketing/tango-y-mas", "_blank")}
-            >
-              BUY TICKETS
-            </Button>
+      {/* Banner Section - Only show until 9/15/2025 midnight Pacific */}
+      {showBanner() && (
+        <section className="relative">
+          <div className="relative">
+            <img 
+              src={getAssetUrl("/Tarareando-Upcoming-Website-Sep2025.png")} 
+              alt="Tarareando Upcoming Events September 2025" 
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+              <Button 
+                size="lg"
+                className="bg-red-600 hover:bg-red-700 text-white font-bold px-12 py-6 text-xl"
+                onClick={() => window.open("https://www.zeffy.com/en-US/ticketing/tango-y-mas", "_blank")}
+              >
+                BUY TICKETS
+              </Button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 flex items-center justify-center bg-[#4a8b8b]">
