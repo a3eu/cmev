@@ -269,12 +269,12 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-1 gap-8 p-16">
+          <div className="grid md:grid-cols-1 gap-4 md:gap-8 p-4 md:p-16">
             <Card className="p-0 bg-[#3e7a7a] text-center rounded-2xl">
               {/*<CardTitle className="font-serif text-xl mb-4">Donate</CardTitle>*/}
               {/*<CardDescription className="mb-4">Support our musicians and educational programs</CardDescription>*/}
               <Button
-                  className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-18 py-9 text-3xl rounded-2xl"
+                  className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-6 py-3 md:px-18 md:py-9 text-lg md:text-3xl rounded-2xl w-full"
                   variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
             </Card>
           </div>
