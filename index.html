@@ -21,6 +21,66 @@
             color: #333;
             background-color: #9CADBA;
         }
+        .banner {
+            background: linear-gradient(135deg, #166579 0%, #4E788B 100%);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .banner-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .banner-info {
+            flex: 1;
+            min-width: 250px;
+        }
+        .banner-title {
+            font-size: 2.5em;
+            margin: 0 0 0.5rem 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .banner-subtitle {
+            font-size: 1.2em;
+            margin: 0 0 1.5rem 0;
+            opacity: 0.9;
+        }
+        .buy-tickets-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #f6b26b, #e69138);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(246, 178, 107, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        .buy-tickets-btn:hover {
+            background: linear-gradient(45deg, #e69138, #d17a1f);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(246, 178, 107, 0.6);
+        }
         header {
             background-color: #166579;
             color: white;
@@ -112,10 +172,37 @@
             h1 {
                 font-size: 2em;
             }
+            .banner-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .banner-image {
+                max-width: 250px;
+            }
+            .banner-title {
+                font-size: 2em;
+            }
+            .banner-subtitle {
+                font-size: 1em;
+            }
+            .buy-tickets-btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="banner">
+        <div class="banner-content">
+            <img class="banner-image" src="public/Tarareando-Upcoming-Website-Sep2025.png" alt="Tarareando Upcoming Concert" />
+            <div class="banner-info">
+                <h2 class="banner-title">Orquesta Típica Tarareando</h2>
+                <p class="banner-subtitle">Don't miss our upcoming concert!</p>
+                <a href="https://www.zeffy.com/ticketing/may-the-4th-tango-with-you" class="buy-tickets-btn">Buy Tickets</a>
+            </div>
+        </div>
+    </div>
     <header>
 <!--
         <svg class="logo" viewBox="0 0 100 100">
