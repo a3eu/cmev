@@ -269,10 +269,15 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="flex justify-center p-4 md:p-16 mb-8">
+          <div className="flex flex-col items-center p-4 md:p-16 mb-8 gap-6">
             <Button
                 className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-8 py-4 md:px-20 md:py-6 text-4xl md:text-5xl rounded-2xl w-full max-w-4xl"
                 variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
+            
+            {/* Second prominent button for mobile visibility */}
+            <Button
+                className="bg-[#4e788b] hover:bg-[#166579] text-white font-bold px-6 py-3 md:px-16 md:py-5 text-2xl md:text-4xl rounded-xl w-full max-w-3xl border-2 border-white"
+                variant="outline"><Link href="/newsletter-signup">📧 Subscribe to Newsletter</Link></Button>
           </div>
 
 
