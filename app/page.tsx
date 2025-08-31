@@ -21,7 +21,7 @@ export default function HomePage() {
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
             <Button 
               size="lg"
-              className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 text-lg"
+              className="bg-red-600 hover:bg-red-700 text-white font-bold px-12 py-6 text-xl"
               onClick={() => window.open("#events", "_self")}
             >
               BUY TICKETS
