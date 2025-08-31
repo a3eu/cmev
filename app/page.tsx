@@ -94,6 +94,11 @@ export default function HomePage() {
                 Blog
               </Link>
             </li>
+            <li>
+              <Link href="/newsletter-signup" className="hover:text-white/80 transition-colors font-medium">
+                Newsletter
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
