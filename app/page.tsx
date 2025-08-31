@@ -269,9 +269,9 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="flex justify-center p-4 md:p-16">
+          <div className="flex justify-center p-4 md:p-16 mb-8">
             <Button
-                className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-6 py-3 md:px-18 md:py-9 text-lg md:text-3xl rounded-2xl mx-auto"
+                className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-8 py-4 md:px-20 md:py-6 text-4xl md:text-5xl rounded-2xl w-full max-w-4xl"
                 variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
           </div>
 
