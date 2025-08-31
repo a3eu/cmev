@@ -110,7 +110,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
                   <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">September 12, 2025</span>
+                  <span className="text-sm text-muted-foreground">Friday, September 12, 2025</span>
                 </div>
                 <CardTitle className="font-serif text-xl">Orquesta Tarareando at Milonga Genesis</CardTitle>
               </CardHeader>
@@ -139,7 +139,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
                   <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">September 13, 2025</span>
+                  <span className="text-sm text-muted-foreground">Saturday, September 13, 2025</span>
                 </div>
                 <CardTitle className="font-serif text-xl">Orquesta Tarareando at Milonga Sentimental</CardTitle>
               </CardHeader>
@@ -168,7 +168,36 @@ export default function HomePage() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
                   <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">November 18, 2025</span>
+                  <span className="text-sm text-muted-foreground">Sunday, September 14, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Tango y más: Orquesta Tarareando in Concert</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-2">
+                  <Clock className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">2&ndash;3:45pm</span>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">217 S Claremont St, San Mateo, CA</span>
+                </div>
+                <CardDescription className="mb-4">
+                  Orquesta Típica Tarareando performs at Milonga Sentimental at the Motion Arts Center in San Mateo
+                </CardDescription>
+                <Button variant="outline"
+                        className="w-full bg-transparent"
+                        onClick={() => window.open("https://motionartscenter.com/milonga-dance-party/", "_blank")}
+                >
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-primary" />
+                  <span className="text-sm text-muted-foreground">Tuesday, November 18, 2025, 1-2pm</span>
                 </div>
                 <CardTitle className="font-serif text-xl">Orquesta Tarareando in concert at JCC Palo Alto</CardTitle>
               </CardHeader>
@@ -179,7 +208,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2 mb-4">
                   <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">1529 S B St. San Mateo, CA</span>
+                  <span className="text-sm text-muted-foreground">3921 Fabian Way, Palo Alto</span>
                 </div>
                 <CardDescription className="mb-4">
                   Orquesta Típica Tarareando presents selections of classic and contemporary tangos.
@@ -202,7 +231,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">About us</h2>
             <p className="text-lg md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Our mission is to support live performances and education in Argentine Tango and Modern Chamber Music throughout the San Francisco Bay Area and beyond
+              We are a 501(c)3 nonprofit with mission to support live performances and education in Argentine Tango and Modern Chamber Music throughout the San Francisco Bay Area and beyond
             </p>
           </div>
 
@@ -330,11 +359,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Offerings Section */}
       <section className="py-20 px-4 bg-[#f0f8f8]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Our Services</h2>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">What We Offer</h2>
             <p className="text-lg text-muted-foreground"></p>
           </div>
 

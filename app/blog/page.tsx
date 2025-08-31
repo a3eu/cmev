@@ -28,7 +28,7 @@ export default function BlogPage() {
             {/* Concert Recap Post */}
             <article className="border-b border-border pb-12">
               <Card className="border-0 shadow-none p-0">
-                <CardHeader className="px-0">
+                <CardHeader className="px-8 p-4">
                   <div className="flex items-center gap-4 mb-4">
                     <Calendar className="w-5 h-5 text-primary" />
                     <span className="text-sm text-muted-foreground">May 5, 2025</span>
@@ -41,7 +41,7 @@ export default function BlogPage() {
                   <CardDescription className="text-lg text-muted-foreground">
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="px-0">
+                <CardContent className="px-8">
                   <div className="w-full max-w-2xl text-right">
                     <img src={getAssetUrl("/20250504-453.jpg")} alt="concert photo" className="w-full h-full object-cover object-center" />
                     <span className="text-sm text-muted-foreground text-right">Photo <a href="https://www.instagram.com/akolb4/"
@@ -89,7 +89,7 @@ export default function BlogPage() {
                         allowFullScreen
                     />
                   </div>
-                  <div className="flex items-center gap-4 mt-8 pt-6 border-t border-border">
+                  <div className="flex items-center gap-4 mt-8 pt-6 border-t border-border p-4">
                     <Music className="w-5 h-5 text-primary" />
                     <span className="text-sm text-muted-foreground">
                       Don't miss: a <a href="https://www.zeffy.com/en-US/ticketing/tango-y-mas"
