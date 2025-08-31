@@ -10,6 +10,26 @@ import { getAssetUrl } from "@/lib/utils"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
+      {/* Banner Section */}
+      <section className="relative">
+        <div className="relative">
+          <img 
+            src={getAssetUrl("/Tarareando-Upcoming-Website-Sep2025.png")} 
+            alt="Tarareando Upcoming Events September 2025" 
+            className="w-full h-auto object-cover"
+          />
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <Button 
+              size="lg"
+              className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 text-lg"
+              onClick={() => window.open("#events", "_self")}
+            >
+              BUY TICKETS
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 flex items-center justify-center bg-[#4a8b8b]">
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
