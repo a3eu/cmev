@@ -269,6 +269,17 @@ export default function HomePage() {
             </p>
           </div>
 
+          <div className="grid md:grid-cols-1 gap-8 p-16">
+            <Card className="p-0 bg-[#3e7a7a] text-center rounded-2xl">
+              {/*<CardTitle className="font-serif text-xl mb-4">Donate</CardTitle>*/}
+              {/*<CardDescription className="mb-4">Support our musicians and educational programs</CardDescription>*/}
+              <Button
+                  className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-18 py-9 text-3xl rounded-2xl"
+                  variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
+            </Card>
+          </div>
+
+
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardHeader>
@@ -314,7 +325,7 @@ export default function HomePage() {
       <section id="projects" className="py-20 px-4 bg-[#f0f8f8]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Our Projects</h2>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Our Ensembles</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             </p>
           </div>
@@ -450,26 +461,34 @@ export default function HomePage() {
             </Card>
           </div>
 
-          {/* Newsletter Signup */}
-          <Card className="p-0 overflow-hidden">
-            <div className="relative w-full h-64 bg-amber-200">
-              <iframe
-                title="Signup form powered by Zeffy"
-                style={{
-                  position: 'absolute',
-                  border: 0,
-                  top: 0,
-                  left: 0,
-                  bottom: 0,
-                  right: 0,
-                  width: '100%',
-                  height: '100%'
-                }}
-                src="https://www.zeffy.com/en-US/embed/newsletter-form/join-our-mailing-list-4"
-                allowtransparency={"true"}
-              />
-            </div>
-          </Card>
+          {/*<Card className="p-0 bg-[#3e7a7a] text-center rounded-2xl">*/}
+          {/*  /!*<CardTitle className="font-serif text-xl mb-4">Donate</CardTitle>*!/*/}
+          {/*  /!*<CardDescription className="mb-4">Support our musicians and educational programs</CardDescription>*!/*/}
+          {/*  <Button*/}
+          {/*      className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-18 py-9 text-3xl rounded-2xl"*/}
+          {/*      variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>*/}
+          {/*</Card>*/}
+
+          {/*/!* Newsletter Signup *!/*/}
+          {/*<Card className="p-0 overflow-hidden">*/}
+          {/*  <div className="relative w-full h-64 bg-amber-200">*/}
+          {/*    <iframe*/}
+          {/*      title="Signup form powered by Zeffy"*/}
+          {/*      style={{*/}
+          {/*        position: 'absolute',*/}
+          {/*        border: 0,*/}
+          {/*        top: 0,*/}
+          {/*        left: 0,*/}
+          {/*        bottom: 0,*/}
+          {/*        right: 0,*/}
+          {/*        width: '100%',*/}
+          {/*        height: '100%'*/}
+          {/*      }}*/}
+          {/*      src="https://www.zeffy.com/en-US/embed/newsletter-form/join-our-mailing-list-4"*/}
+          {/*      allowtransparency={"true"}*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*</Card>*/}
         </div>
       </section>
 
