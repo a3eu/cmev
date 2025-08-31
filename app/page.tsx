@@ -29,7 +29,7 @@ export default function HomePage() {
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
               <Button 
                 size="lg"
-                className="bg-red-600 hover:bg-red-700 text-white font-bold px-18 py-9 text-3xl"
+                className="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 text-base sm:px-8 sm:py-4 sm:text-xl md:px-12 md:py-6 md:text-2xl lg:px-18 lg:py-9 lg:text-3xl"
                 onClick={() => window.open("https://www.zeffy.com/en-US/ticketing/tango-y-mas", "_blank")}
               >
                 BUY TICKETS
