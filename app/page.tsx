@@ -268,14 +268,15 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-1 gap-8 p-16">
-            <Card className="p-0 bg-[#3e7a7a] text-center rounded-2xl">
-              {/*<CardTitle className="font-serif text-xl mb-4">Donate</CardTitle>*/}
-              {/*<CardDescription className="mb-4">Support our musicians and educational programs</CardDescription>*/}
-              <Button
-                  className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-18 py-9 text-3xl rounded-2xl"
-                  variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
-            </Card>
+          <div className="flex flex-col items-center p-4 md:p-16 mb-8 gap-6">
+            <Button
+                className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-8 lg:py-10 sm:py-4 py-9 md:px-20 md:py-6 sm:text-3xl lg:text-5xl md:text-4xl rounded-2xl w-full max-w-4xl"
+                variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
+
+            {/* Second prominent button for mobile visibility */}
+            <Button
+                className="bg-[#4e788b] hover:bg-[#166579] text-white font-bold px-6 py-3 md:px-16 md:py-5 text-2xl md:text-5xl rounded-xl w-full max-w-3xl border-2 border-white"
+                variant="outline"><Link href="/newsletter-signup">📧 Subscribe to Newsletter</Link></Button>
           </div>
 
 
