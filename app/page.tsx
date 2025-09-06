@@ -274,9 +274,9 @@ export default function HomePage() {
                 variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
 
             {/* Second prominent button for mobile visibility */}
-            <Button
-                className="bg-[#4e788b] hover:bg-[#166579] text-white font-bold px-6 py-3 md:px-16 md:py-5 text-2xl md:text-5xl rounded-xl w-full max-w-3xl border-2 border-white"
-                variant="outline"><Link href="/newsletter-signup">📧 Subscribe to Newsletter</Link></Button>
+            {/*<Button*/}
+            {/*    className="bg-[#4e788b] hover:bg-[#166579] text-white font-bold px-6 py-3 md:px-16 md:py-5 text-2xl md:text-5xl rounded-xl w-full max-w-3xl border-2 border-white"*/}
+            {/*    variant="outline"><Link href="/newsletter-signup">📧 Subscribe to Newsletter</Link></Button>*/}
           </div>
 
 
