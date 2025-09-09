@@ -207,6 +207,37 @@ export default function MusiciansPage() {
 
             <Card className="overflow-hidden">
               <CardHeader>
+                <CardTitle className="font-serif text-2xl">Celeste Chiam</CardTitle>
+                <CardDescription className="text-lg">Piano (Guest)</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="w-full max-w-2xl text-right">
+                  <img src={getAssetUrl("/celeste.jpg")} alt="Celeste Chiam photo" className="w-full h-full object-cover object-center" />
+                </div>
+
+                <p className="mt-4 text-muted-foreground mb-4">
+                  Dr. Celeste Chiam is an educator and a pianist whose passion in music, dance, education, youth development and humanity keep her active in musical performances, piano instruction and value creation initiatives.
+                  </p>
+
+                <p className="mt-4 text-muted-foreground mb-4">
+                  A Malaysian-born Chinese, Celeste embarked on her musical path at age four under the guidelines of the Associated Board of the Royal Schools of Music (ABRSM) and received her Licentiate Performer Diploma through Trinity London College by the end of secondary school. Upon receiving a full scholarship from Ithaca College in New York, Celeste traveled to the US to pursue her Bachelor of Music, under the tutelage of Phiroze Mehta. She then graduated with her Master of Music from the University of New Mexico where she studied with Falko Steinbach. With the guidance of Dr. Jane Solose, Celeste obtained her Doctor of Musical Arts degree in Piano Performance from the Conservatory of Music and Dance at University of Missouri-Kansas City.
+                </p>
+
+                <p className="mt-4 text-muted-foreground mb-4">
+                  As a trained ballet dancer of 16 years, Celeste immediately recognized her love at first sight for
+                  both the music and dance of Argentine tango.
+                  Shortly after discovering the Bay area tango community in 2016, she played with several local
+                  ensembles
+                  including LOFT, Tangonero, and Orquesta Típica Domo.
+                  Celeste has received coaching
+                  from highly esteemed tango musicians, namely Pablo Estigarribia, Gustavo Casenave, Adrian Enriquez,
+                  Nicolas Ledesma, Emilio Solla, and Hector Del Curto to refine her skills.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <CardHeader>
                 <CardTitle className="font-serif text-2xl">Ken Miller</CardTitle>
                 <CardDescription className="text-lg">Double-bass</CardDescription>
               </CardHeader>
