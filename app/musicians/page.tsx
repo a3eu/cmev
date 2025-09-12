@@ -183,9 +183,16 @@ export default function MusiciansPage() {
                 <div className="w-full max-w-2xl text-right">
                   <img src={getAssetUrl("/crystie-shum-publicity.jpg")} alt="Crystie Shum photo" className="w-full h-full object-cover object-center" />
                 </div>
-
                 <p className="mt-4 text-muted-foreground mb-4">
-                  Born in Hong Kong, Crystie began piano lessons at four, and studied for eight years. In 2017, she decided to play piano again, and fell in love with Argentine tango after playing in the CMC Tango Ensemble directed by Scott O’Day. Since then, she has been receiving coaching from maestros such as Hector Del Curto, Pablo Estigarribia, Gustavo Casenave, Hernan Possetti, Nicolas Ledesma, AdrianEnriquez, Cesar Salgan, Julian Peralta, Juan Pablo Gallardo. In August, 2022, she performed in the Stowe Tango Music Festival Orchestra, and experienced playing a piece for the Che Bandoneon International Competition. Crystie is currently a pianist, vocalist, and arranger in La Orquesta Fusion Tango, TangoLuna, Tango Brumoso, and Orquesta Tipica Tarareando. Besides music, she is a social worker with two dogs and a parrot.
+                  Born in Hong Kong, Crystie began piano lessons at four, and studied for eight years. After falling in
+                  love with Argentine tango, she has received coaching from maestros such as Hector Del Curto, Pablo
+                  Estigarribia, Gustavo Casenave, Nicolas Ledesma, Adrian Enriquez, Cesar Salgan, etc. She performed at
+                  the Stowe Tango Music Festival in 2022 and 2023 with special guests, Victor Lavallen and Guillermo
+                  Rubino. She also performed in Buenos Aires, Tijuana, and multiple cities in Japan. She is actively
+                  performing in the following groups: Alex Roitman Tango Ensemble based in Florida, Orquesta Tipica
+                  Tarareando based in the San Francisco Bay Area, and Los Angeles del Tango based in Los Angeles. She
+                  also started her own group, Cristal in 2025. Besides music, Crystie is a social worker with two dogs,
+                  a parrot, a tortoise, and an iguana.
                 </p>
               </CardContent>
             </Card>
