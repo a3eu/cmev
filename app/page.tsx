@@ -8,7 +8,6 @@ import PageFooter from "@/components/page-footer"
 import { getAssetUrl } from "@/lib/utils"
 
 export default function HomePage() {
-  // Check if current date is before September 15, 2025 midnight Pacific time
   const showBanner = () => {
     const now = new Date();
     const cutoffDate = new Date('2025-09-15T07:00:00Z'); // Midnight PDT is UTC-7, so 7:00 UTC
@@ -20,22 +19,6 @@ export default function HomePage() {
       {/* Banner Section - Only show until 9/15/2025 midnight Pacific */}
       {showBanner() && (
         <section className="relative">
-          <div className="relative">
-            <img 
-              src={getAssetUrl("/Tarareando-Upcoming-Website-Sep2025.png")} 
-              alt="Tarareando Upcoming Events September 2025" 
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2">
-              <Button 
-                size="lg"
-                className="bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-1.5 text-sm sm:px-8 sm:py-4 sm:text-xl md:px-12 md:py-6 md:text-2xl lg:px-18 lg:py-9 lg:text-3xl"
-                onClick={() => window.open("https://www.zeffy.com/en-US/ticketing/tango-y-mas", "_blank")}
-              >
-                BUY TICKETS
-              </Button>
-            </div>
-          </div>
         </section>
       )}
 
@@ -115,88 +98,30 @@ export default function HomePage() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
                   <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Friday, September 12, 2025</span>
+                  <span className="text-sm text-muted-foreground">Friday, October 3, 2025, 5pm</span>
                 </div>
-                <CardTitle className="font-serif text-xl">Orquesta Tarareando at Milonga Genesis</CardTitle>
+                <CardTitle className="font-serif text-xl">Tarareando Cuarteto in Union Square, San Francisco</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center gap-2 mb-2">
                   <Clock className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">8:30PM&ndash;12:30AM (live set around 10pm)</span>
+                  <span className="text-sm text-muted-foreground">5PM</span>
                 </div>
                 <div className="flex items-center gap-2 mb-4">
                   <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">404 Clement St, San Francisco</span>
+                  <span className="text-sm text-muted-foreground">Union Square, San Francisco</span>
                 </div>
                 <CardDescription className="mb-4">
-                  Orquesta Típica Tarareando performs at Milonga Genesis in San Francisco
+                  Tarareando Cuarteto plays live music at Tango in the Square
                 </CardDescription>
                 <Button variant="outline"
                         className="w-full bg-transparent"
-                        onClick={() => window.open("https://sftangowith.us/event/la-milonga-genesis-25-2/2025-09-12/", "_blank")}
+                        onClick={() => window.open("https://www.facebook.com/events/1438188940808334/1438188947475000/", "_blank")}
                 >
-                  Learn More
+                  Learn more
                 </Button>
               </CardContent>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Saturday, September 13, 2025</span>
-                </div>
-                <CardTitle className="font-serif text-xl">Orquesta Tarareando at Milonga Sentimental</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center gap-2 mb-2">
-                  <Clock className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">8PM&ndash;12:30AM (live set around 9:30PM)</span>
-                </div>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">217 S Claremont St, San Mateo, CA</span>
-                </div>
-                <CardDescription className="mb-4">
-                  Orquesta Típica Tarareando performs at Milonga Sentimental at the Motion Arts Center in San Mateo
-                </CardDescription>
-                <Button variant="outline"
-                        className="w-full bg-transparent"
-                        onClick={() => window.open("https://motionartscenter.com/milonga-dance-party/", "_blank")}
-                >
-                  Learn More
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Sunday, September 14, 2025</span>
-                </div>
-                <CardTitle className="font-serif text-xl">Tango y más: Orquesta Tarareando in Concert</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center gap-2 mb-2">
-                  <Clock className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">2&ndash;3:45pm</span>
-                </div>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">1527 South B St San Mateo, CA</span>
-                </div>
-                <CardDescription className="mb-4">
-                  Orquesta Típica Tarareando in concert at Gradus ad Parnassum Music Academy in San Mateo.
-                </CardDescription>
-                <Button variant="outline"
-                        className="w-full bg-transparent"
-                        onClick={() => window.open("https://www.zeffy.com/en-US/ticketing/tango-y-mas", "_blank")}>
-                  Learn More
-                </Button>
-              </CardContent>
-            </Card>
-
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
@@ -356,28 +281,59 @@ export default function HomePage() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
                   <Calendar className="w-6 h-6 text-primary" />
+                  <span className="text-sm text-muted-foreground">Sunday, September 13, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Tango y más: Orquesta Tarareando in concert, Gradus ad Parnassum Music Academy, San Mateo</CardTitle>
+              </CardHeader>
+              <CardContent>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-primary" />
+                  <span className="text-sm text-muted-foreground">Saturday, September 13, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Milonga Sentimental, San Mateo</CardTitle>
+              </CardHeader>
+              <CardContent>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-primary" />
+                  <span className="text-sm text-muted-foreground">Friday, September 12, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Milonga Genesis, San Francisco</CardTitle>
+              </CardHeader>
+              <CardContent>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-primary" />
+                  <span className="text-sm text-muted-foreground">Sunday, September 7, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Private Concert (Oakland)</CardTitle>
+              </CardHeader>
+              <CardContent>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-primary" />
                   <span className="text-sm text-muted-foreground">Saturday, September 6, 2025</span>
                 </div>
                 <CardTitle className="font-serif text-xl">Tango Night at Feeling Flow (Palo Alto)</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2 mb-2">
-                  <Clock className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">5:30&ndash;9PM (live music at 7PM)</span>
-                </div>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">1680 Bryant St, Palo Alto</span>
-                </div>
-                <CardDescription className="mb-4">
-                  Solos, duets, and trios performed by Special guest Yukie (Japan) and the Duo <i>Luz de neón</i>.
-                </CardDescription>
-                <Button variant="outline"
-                        className="w-full bg-transparent"
-                        onClick={() => window.open("https://www.feelingflow.org/tea-tango#register", "_blank")}
-                >
-                  Learn More
-                </Button>
               </CardContent>
             </Card>
 
@@ -390,18 +346,9 @@ export default function HomePage() {
                 <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando inaugural concert</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">Gradus ad Parnassum Music Academy</span>
-                </div>
-                <CardDescription>
-                </CardDescription>
               </CardContent>
             </Card>
-
           </div>
-
-
         </div>
       </section>
 
