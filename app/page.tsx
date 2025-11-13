@@ -94,39 +94,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
+
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
                   <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Friday, October 3, 2025, 5pm</span>
-                </div>
-                <CardTitle className="font-serif text-xl">Tarareando Cuarteto in Union Square, San Francisco</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center gap-2 mb-2">
-                  <Clock className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">5PM</span>
-                </div>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">Union Square, San Francisco</span>
-                </div>
-                <CardDescription className="mb-4">
-                  Tarareando Cuarteto plays live music at Tango in the Square
-                </CardDescription>
-                <Button variant="outline"
-                        className="w-full bg-transparent"
-                        onClick={() => window.open("https://www.facebook.com/events/1438188940808334/1438188947475000/", "_blank")}
-                >
-                  Learn more
-                </Button>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Tuesday, November 18, 2025, 1-2pm</span>
+                  <span className="text-sm text-muted-foreground">November 18, 2025</span>
                 </div>
                 <CardTitle className="font-serif text-xl">Orquesta Tarareando in concert at JCC Palo Alto</CardTitle>
               </CardHeader>
@@ -137,7 +110,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2 mb-4">
                   <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">3921 Fabian Way, Palo Alto</span>
+                  <span className="text-sm text-muted-foreground">3921 Fabian Way Palo Alto, CA </span>
                 </div>
                 <CardDescription className="mb-4">
                   Orquesta Típica Tarareando presents selections of classic and contemporary tangos.
@@ -145,6 +118,37 @@ export default function HomePage() {
                 <Button variant="outline"
                         className="w-full bg-transparent"
                         onClick={() => window.open("https://www.paloaltojcc.org/events/argentine-tango-music-that-moves", "_blank")}
+                >
+                  Learn more
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-primary" />
+                  <span className="text-sm text-muted-foreground">November 22, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando at Tea &amp; Tango Thanksgiving Milonga (Palo Alto)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-2">
+                  <Clock className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">12noon&ndash;9:30PM</span>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">1680 Bryant St, Palo Alto</span>
+                </div>
+                <CardDescription className="mb-4">
+                  <p>Tea & Tango THANKSGIVING MILONGA </p>
+                  <p>All Day Milonga, Potluck, Live Music & our 3 Year Anniversary!</p>
+                  <p>Orquesta Típica Tarareando plays at 8PM.</p>
+                </CardDescription>
+                <Button variant="outline"
+                        className="w-full bg-transparent"
+                        onClick={() => window.open("https://www.feelingflow.org/thanksgiving-milonga", "_blank")}
                 >
                   Learn more
                 </Button>
@@ -276,64 +280,201 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Sunday, September 13, 2025</span>
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">November 9, 2025</span>
                 </div>
-                <CardTitle className="font-serif text-xl">Tango y más: Orquesta Tarareando in concert, Gradus ad Parnassum Music Academy, San Mateo</CardTitle>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando private concert</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">Moraga, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Saturday, September 13, 2025</span>
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">November 8, 2025</span>
                 </div>
-                <CardTitle className="font-serif text-xl">Milonga Sentimental, San Mateo</CardTitle>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando private concert</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">Sausalito, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Friday, September 12, 2025</span>
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">November 1, 2025</span>
                 </div>
-                <CardTitle className="font-serif text-xl">Milonga Genesis, San Francisco</CardTitle>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando at Milonga Ocho Loco</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">Santa Rosa, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Sunday, September 7, 2025</span>
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">October 28, 2025</span>
                 </div>
-                <CardTitle className="font-serif text-xl">Private Concert (Oakland)</CardTitle>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando at La Pista</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">San Francisco, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
-                  <Calendar className="w-6 h-6 text-primary" />
-                  <span className="text-sm text-muted-foreground">Saturday, September 6, 2025</span>
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">October 4, 2025</span>
                 </div>
-                <CardTitle className="font-serif text-xl">Tango Night at Feeling Flow (Palo Alto)</CardTitle>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando at Milonga Sentimental</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">San Mateo, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">October 3, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando at Union Square</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">San Francisco, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">September 13, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando at Milonga Sentimental</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">San Mateo, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">September 12, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando at Milonga Genesis</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">San Francisco, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">September 7, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando private concert</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">Oakland, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">September 6, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Yukie + Duo Luz de neón at Feeling Flow</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">Palo Alto</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <Calendar className="w-6 h-6 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">September 5, 2025</span>
+                </div>
+                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando private concert</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">Palo Alto</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
               </CardContent>
             </Card>
 
@@ -346,9 +487,18 @@ export default function HomePage() {
                 <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando inaugural concert</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">Gradus ad Parnassum Music Academy, San Mateo, CA</span>
+                </div>
+                <CardDescription>
+                </CardDescription>
               </CardContent>
             </Card>
+
           </div>
+
+
         </div>
       </section>
 
