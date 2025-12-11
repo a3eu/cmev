@@ -1,0 +1,108 @@
+{
+  "events": [
+    {
+      "id": "2025-11-22-tea-tango-thanksgiving",
+      "date": "2025-11-22",
+      "title": "Orquesta Típica Tarareando at Tea & Tango Thanksgiving Milonga (Palo Alto)",
+      "time": "12noon–9:30PM",
+      "location": "1680 Bryant St, Palo Alto",
+      "city": "Palo Alto",
+      "description": "Tea & Tango THANKSGIVING MILONGA. All Day Milonga, Potluck, Live Music & our 3 Year Anniversary! Orquesta Típica Tarareando plays at 8PM.",
+      "link": "https://www.feelingflow.org/thanksgiving-milonga"
+    },
+    {
+      "id": "2025-11-18-jcc-palo-alto",
+      "date": "2025-11-18",
+      "title": "Orquesta Tarareando in concert at JCC Palo Alto",
+      "time": "1–2PM",
+      "location": "3921 Fabian Way Palo Alto, CA",
+      "city": "Palo Alto",
+      "description": "Orquesta Típica Tarareando presents selections of classic and contemporary tangos.",
+      "link": "https://www.paloaltojcc.org/events/argentine-tango-music-that-moves"
+    },
+    {
+      "id": "2025-11-09-moraga-private",
+      "date": "2025-11-09",
+      "title": "Orquesta Típica Tarareando private concert",
+      "location": "Moraga, CA",
+      "city": "Moraga"
+    },
+    {
+      "id": "2025-11-08-sausalito-private",
+      "date": "2025-11-08",
+      "title": "Orquesta Típica Tarareando private concert",
+      "location": "Sausalito, CA",
+      "city": "Sausalito"
+    },
+    {
+      "id": "2025-11-01-ocho-loco",
+      "date": "2025-11-01",
+      "title": "Orquesta Típica Tarareando at Milonga Ocho Loco",
+      "location": "Santa Rosa, CA",
+      "city": "Santa Rosa"
+    },
+    {
+      "id": "2025-10-28-la-pista",
+      "date": "2025-10-28",
+      "title": "Orquesta Típica Tarareando at La Pista",
+      "location": "San Francisco, CA",
+      "city": "San Francisco"
+    },
+    {
+      "id": "2025-10-04-milonga-sentimental",
+      "date": "2025-10-04",
+      "title": "Orquesta Típica Tarareando at Milonga Sentimental",
+      "location": "San Mateo, CA",
+      "city": "San Mateo"
+    },
+    {
+      "id": "2025-10-03-union-square",
+      "date": "2025-10-03",
+      "title": "Orquesta Típica Tarareando at Union Square",
+      "location": "San Francisco, CA",
+      "city": "San Francisco"
+    },
+    {
+      "id": "2025-09-13-milonga-sentimental",
+      "date": "2025-09-13",
+      "title": "Orquesta Típica Tarareando at Milonga Sentimental",
+      "location": "San Mateo, CA",
+      "city": "San Mateo"
+    },
+    {
+      "id": "2025-09-12-milonga-genesis",
+      "date": "2025-09-12",
+      "title": "Orquesta Típica Tarareando at Milonga Genesis",
+      "location": "San Francisco, CA",
+      "city": "San Francisco"
+    },
+    {
+      "id": "2025-09-07-oakland-private",
+      "date": "2025-09-07",
+      "title": "Orquesta Típica Tarareando private concert",
+      "location": "Oakland, CA",
+      "city": "Oakland"
+    },
+    {
+      "id": "2025-09-06-feeling-flow",
+      "date": "2025-09-06",
+      "title": "Yukie + Duo Luz de neón at Feeling Flow",
+      "location": "Palo Alto",
+      "city": "Palo Alto"
+    },
+    {
+      "id": "2025-09-05-palo-alto-private",
+      "date": "2025-09-05",
+      "title": "Orquesta Típica Tarareando private concert",
+      "location": "Palo Alto",
+      "city": "Palo Alto"
+    },
+    {
+      "id": "2025-05-04-inaugural-concert",
+      "date": "2025-05-04",
+      "title": "Orquesta Típica Tarareando inaugural concert",
+      "location": "Gradus ad Parnassum Music Academy, San Mateo, CA",
+      "city": "San Mateo"
+    }
+  ]
+}
