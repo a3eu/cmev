@@ -9,20 +9,8 @@ import { getAssetUrl } from "@/lib/utils"
 import { getUpcomingEvents, getPastEvents, formatEventDate } from "@/lib/events"
 
 export default function HomePage() {
-  const showBanner = () => {
-    const now = new Date();
-    const cutoffDate = new Date('2025-09-15T07:00:00Z'); // Midnight PDT is UTC-7, so 7:00 UTC
-    return now < cutoffDate;
-  };
-
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
-      {/* Banner Section - Only show until 9/15/2025 midnight Pacific */}
-      {showBanner() && (
-        <section className="relative">
-        </section>
-      )}
-
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 flex items-center justify-center bg-[#4a8b8b]">
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
@@ -216,7 +204,7 @@ export default function HomePage() {
               <div className="relative w-full aspect-video">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/uHfkAfNkTUc"
+                  src="https://www.youtube.com/embed/jauK8-tid1s"
                   title="Orquesta Típica Tarareando"
                   frameBorder="0"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
