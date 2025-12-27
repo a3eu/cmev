@@ -240,26 +240,28 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="overflow-hidden">
-              <div className="relative w-full aspect-video">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/jauK8-tid1s"
-                  title="Orquesta Típica Tarareando"
-                  frameBorder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
-              <CardHeader>
-                <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Traditional Argentine Tango orchestra bringing authentic sounds of Buenos Aires to the Bay Area and beyond
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <Link href="/tarareando">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full pointer-events-none"
+                    src="https://www.youtube.com/embed/jauK8-tid1s"
+                    title="Orquesta Típica Tarareando"
+                    frameBorder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="font-serif text-xl">Orquesta Típica Tarareando</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>
+                    Traditional Argentine Tango orchestra bringing authentic sounds of Buenos Aires to the Bay Area and beyond
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </Link>
 
             <Card className="overflow-hidden">
               <div className="relative w-full aspect-video bg-cover bg-center"
