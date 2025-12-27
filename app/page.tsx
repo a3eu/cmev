@@ -107,8 +107,10 @@ export default function HomePage() {
                       <span className="text-sm text-muted-foreground">{event.location}</span>
                 </div>
                     {event.description && (
-                <CardDescription className="mb-4">
-                        {event.description}
+                <CardDescription className="mb-4 space-y-2">
+                        {event.description.split('\n').map((paragraph, index) => (
+                          <p key={index}>{paragraph}</p>
+                        ))}
                 </CardDescription>
                     )}
                     {event.link && (
