@@ -6,16 +6,6 @@ import PageFooter from "@/components/page-footer"
 import Link from "next/link"
 import { getAssetUrl } from "@/lib/utils"
 
-
-// TODO:
-// DISABLE INITIALLY
-// BEFORE ENABLING:
-// Write blog texts:
-// Concert:
-//  Put videos, photos
-// Making live music fair trade
-
-
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
@@ -25,6 +15,72 @@ export default function BlogPage() {
       <section className="py-20 px-4 bg-[#f0f8f8]">
         <div className="max-w-4xl mx-auto">
           <div className="space-y-12">
+            {/* 2025 Year in Review Post */}
+            <article className="border-b border-border pb-12">
+              <Card className="border-0 shadow-none p-0">
+                <CardHeader className="px-8 p-4">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Calendar className="w-5 h-5 text-primary" />
+                    <span className="text-sm text-muted-foreground">December 26, 2025</span>
+                    <span className="text-sm text-muted-foreground">•</span>
+                    <span className="text-sm text-muted-foreground">Year in Review</span>
+                  </div>
+                  <CardTitle className="font-serif text-3xl md:text-4xl font-bold mb-4">
+                    2025 in Review
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="px-8">
+                  <div className="prose prose-lg max-w-none">
+                    <p className="text-foreground mb-4">
+                      2025 was our first year, and we had a great time getting things started. Your support helped us produce and co-sponsor several concerts and milongas throughout the year.
+                    </p>
+                    <p className="text-foreground mb-4">
+                      Between shows, we worked on new repertoire and recorded several songs, which we'll be releasing this coming May. 2026 is already filling up, including the Orquesta Típica Tarareando debut at the San Francisco International Arts Festival.
+                    </p>
+                    <p className="text-foreground mb-4">
+                      Thanks for being part of our inaugural year! See you in 2026!
+                    </p>
+                  </div>
+
+                  {/* Photo Gallery */}
+                  <div className="mt-8 flex flex-col gap-3">
+                    {/* Row 1 - full width */}
+                    <img src={getAssetUrl("/b2-2.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+                    
+                    {/* Row 2 - two images side by side, heights matched */}
+                    <div className="flex gap-3 items-stretch">
+                      <div className="w-[58%] overflow-hidden rounded-lg">
+                        <img 
+                          src={getAssetUrl("/b2-3.jpg")} 
+                          alt="2025 highlights" 
+                          className="w-full h-full object-cover object-top"
+                        />
+                      </div>
+                      <img src={getAssetUrl("/b2-5.jpeg")} alt="2025 highlights" className="w-[42%] h-auto rounded-lg" />
+                    </div>
+                    
+                    {/* Row 3 - full width */}
+                    <img src={getAssetUrl("/b2-6.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+                    
+                    {/* Row 4 - full width */}
+                    <img src={getAssetUrl("/b2-4.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+                  </div>
+
+                  {/* Video */}
+                  <div className="mt-6 relative w-full aspect-video">
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-lg"
+                      src="https://www.youtube.com/embed/jauK8-tid1s"
+                      title="Orquesta Típica Tarareando"
+                      frameBorder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </article>
+
             {/* Concert Recap Post */}
             <article className="border-b border-border pb-12">
               <Card className="border-0 shadow-none p-0">
@@ -36,7 +92,7 @@ export default function BlogPage() {
                     <span className="text-sm text-muted-foreground">Concert Recap</span>
                   </div>
                   <CardTitle className="font-serif text-3xl md:text-4xl font-bold mb-4">
-                    Highlights from our inaugural concert
+                    Highlights from Our Inaugural Concert
                   </CardTitle>
                   <CardDescription className="text-lg text-muted-foreground">
                   </CardDescription>
