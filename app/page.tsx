@@ -11,24 +11,62 @@ import { getUpcomingEvents, getPastEvents, formatEventDate } from "@/lib/events"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
-      {/* Hero Section */}
-      <section className="relative py-16 md:py-24 flex items-center justify-center bg-[#4a8b8b]">
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <div className="mb-8">
+      {/* Hero Section - aspect ratio ~2.71:1 for BANNER-000 (2468x910) = 36.87vw height at 100vw */}
+      <section 
+        className="relative flex items-end justify-center bg-[#4a8b8b] min-[800px]:min-h-[50vw] min-[1300px]:min-h-[36.87vw]"
+        style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
+      >
+        {/* Background image - BANNER-001 for screens < 1300px */}
+        {/* 70/30 crop: more from top, less from bottom */}
+        <div 
+          className="absolute inset-0 bg-cover bg-[center_70%] min-[1300px]:hidden"
+          style={{ backgroundImage: `url(${getAssetUrl("/OTT-BANNER-001.jpg")})` }}
+        />
+        {/* Background image - BANNER-000 for screens >= 1300px */}
+        <div 
+          className="absolute inset-0 bg-center bg-no-repeat hidden min-[1300px]:block"
+          style={{ 
+            backgroundImage: `url(${getAssetUrl("/OTT-BANNER-000.jpg")})`,
+            backgroundSize: '100% auto'
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 text-center max-w-4xl mx-auto flex flex-col min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0 min-[800px]:max-w-6xl min-[800px]:px-4 min-[800px]:flex-row min-[800px]:items-center min-[800px]:gap-4 min-[800px]:scale-[0.85] min-[800px]:origin-bottom-left">
+          <div 
+            className="min-[800px]:!ml-0"
+            style={{ marginLeft: 'calc(25% - min(16vw, 4.8rem))' }}
+          >
             <img 
               src={getAssetUrl("/cmev-logo-web-1.png")} 
               alt="¡Con música en vivo! Logo" 
-              className="w-48 h-48 mx-auto mb-6 object-contain"
+              className="object-contain opacity-90"
+              style={{ 
+                width: 'min(32vw, 9.6rem)', 
+                height: 'min(32vw, 9.6rem)',
+                marginBottom: 'min(1.5rem, 4vw)'
+              }}
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Kaushan Script, cursive'}}>¡Con música en vivo!</h1>
-          <p
+          <div className="min-[800px]:text-left">
+            <h1 
+              className="font-bold text-white whitespace-nowrap opacity-90" 
               style={{
-                opacity: 0.8,
+                fontFamily: 'Kaushan Script, cursive',
+                fontSize: 'min(8vw, 3.75rem)',
+                marginBottom: 'min(1rem, 3vw)'
               }}
-              className="font-serif font-bold text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
-            LIFE IS BETTER WITH LIVE MUSIC
-          </p>
+            >
+              ¡Con música en vivo!
+            </h1>
+            <p
+                style={{
+                  opacity: 0.8,
+                  fontSize: 'min(4vw, 1.25rem)'
+                }}
+                className="font-serif font-bold text-white max-w-2xl whitespace-nowrap">
+              LIFE IS BETTER WITH LIVE MUSIC
+            </p>
+          </div>
         </div>
       </section>
 
