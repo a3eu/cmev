@@ -179,9 +179,15 @@ export default function WaysToGivePage() {
             Contact us to discuss donation options or learn more about our programs.
             Email: info@conmusicaenvivo.org
           </p>
+
+          <p className="text-lg text-muted-foreground mb-8">
+            ¡Con música en vivo! is a 501(c)(3) non-profit organization.
+            Our Federal Tax ID Number is 68-0425585.
+            Your donation is tax-deductible to the full extent of the law.
+          </p>
         </div>
       </section>
-      
+
         <PageFooter />
       </div>
   )
