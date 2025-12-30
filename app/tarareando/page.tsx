@@ -50,7 +50,13 @@ export default function TarareandoPage() {
               United by a shared passion for tango, <Link href="/musicians" className="underline text-blue-600 hover:text-blue-800">musicians</Link> bring a wealth of experience from diverse musical backgrounds. Individually and as an ensemble, the members have studied with, performed alongside, and accompanied many of today's leading tango artists.
             </p>
             <p className="text-foreground text-lg mb-6">
-              The group maintains an active schedule of concerts and social dances, showcasing a wide range of traditional and contemporary pieces. The 2025 highlights included performances at Bay Area's premier dance events, a milonga at Union Square, Palo Alto Jewish Community Center, and Gradus ad Parnassum Music Academy.
+                Showcasing traditional and contemporary works,
+                the group maintains a vibrant schedule of concerts
+                and social dances. The 2025 season featured appearances
+                at top Bay Area dance events, a milonga at Union Square,
+                concerts at the Palo Alto JCC and Gradus ad Parnassum Music Academy,
+                and a collaboration with the First Presbyterian San Anselmo choir
+                to perform Martín Palmeri’s Misatango.
             </p>
           </div>
 
