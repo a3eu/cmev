@@ -7,7 +7,7 @@ export default function TarareandoPage() {
     <div className="min-h-screen bg-[#b0c4c4]">
       {/* Hero Section with background image */}
       <section 
-        className="relative flex items-end justify-center bg-[#4a8b8b] min-[800px]:min-h-[50vw] min-[1300px]:min-h-[36.87vw]"
+        className="relative flex items-end justify-start min-[800px]:justify-center bg-[#4a8b8b] min-[800px]:min-h-[50vw] min-[1300px]:min-h-[36.87vw]"
         style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
       >
         {/* Background image - BANNER-001 for screens < 1300px */}
@@ -24,17 +24,83 @@ export default function TarareandoPage() {
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center max-w-4xl mx-auto min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0">
-          <h1 
-            className="font-serif font-bold text-white opacity-90 whitespace-nowrap" 
-            style={{
-              fontSize: 'min(5vw, 3rem)'
-            }}
-          >
-            Orquesta Típica Tarareando
-          </h1>
+        
+        {/* CMEV Logo - top left */}
+        <Link href="/" className="absolute top-4 left-4 z-20">
+          <img 
+            src={getAssetUrl("/cmev-logo-web-1.png")} 
+            alt="¡Con música en vivo! Logo" 
+            className="w-12 h-12 min-[800px]:w-24 min-[800px]:h-24 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+        </Link>
+        <div className="relative z-10 text-left mt-auto min-[800px]:absolute min-[800px]:bottom-0 min-[800px]:left-0 min-[800px]:right-0 mb-[calc(-10%-30px)] min-[800px]:mb-[-5%]">
+          <img 
+            src={getAssetUrl("/OTT Logo White.svg?v=4")} 
+            alt="Orquesta Típica Tarareando" 
+            className="ml-[5%] opacity-90 w-[66vw] min-[800px]:w-[55vw] min-[1300px]:w-[50vw]"
+          />
         </div>
       </section>
+
+      {/* Navigation Bar */}
+      <nav className="bg-[#3e7a7a] py-4 px-4 sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto">
+          <ul className="flex flex-wrap justify-center gap-6 md:gap-8 text-white">
+            <li>
+              <Link href="/" className="hover:text-white/80 transition-colors font-medium">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/#events" className="hover:text-white/80 transition-colors font-medium">
+                Events
+              </Link>
+            </li>
+            <li>
+              <Link href="/#about" className="hover:text-white/80 transition-colors font-medium">
+                About
+              </Link>
+            </li>
+            <li className="relative group">
+              <Link href="/#projects" className="hover:text-white/80 transition-colors font-medium">
+                Our Ensembles
+              </Link>
+              <ul className="absolute left-0 top-full mt-2 bg-[#3e7a7a] rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[160px] z-50">
+                <li>
+                  <Link href="/tarareando" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
+                    OT Tarareando
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#projects" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
+                    Luz de neón
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link href="/musicians" className="hover:text-white/80 transition-colors font-medium">
+                Musicians
+              </Link>
+            </li>
+            <li>
+              <Link href="/ways-to-give" className="hover:text-white/80 transition-colors font-medium">
+                Support Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className="hover:text-white/80 transition-colors font-medium">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link href="/newsletter-signup" className="hover:text-white/80 transition-colors font-medium">
+                Newsletter
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       {/* Bio Section */}
       <section className="py-20 px-4 bg-[#f0f8f8]">
@@ -59,6 +125,14 @@ export default function TarareandoPage() {
                 to perform Martín Palmeri’s Misatango.
             </p>
           </div>
+
+          <p className="text-foreground text-lg mt-8 mb-6">
+            The word <em>tarareando</em> (from the verb <em>tararear</em>) describes
+              the act of humming or vocalizing a melody—literally 'ta-ra-ra-ing' to follow the tune.
+              In the Golden Age tango <Link href="https://www.todotango.com/musica/tema/4224/Tarareando/"
+                                            className="underline text-blue-600 hover:text-blue-800"
+          >Tarareando</Link>, by Juan José Guichandut and Oscar Rubens, the protagonist sings: 'Whatever trouble life throws at me, I just hum my song&mdash;<em>ta-ra-ra-rí, ta-ra-ra</em>&mdash;and life is better for it.'
+          </p>
 
           {/* Social Links */}
           <div className="flex gap-4 mt-8">
