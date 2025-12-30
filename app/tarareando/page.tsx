@@ -1,11 +1,40 @@
-import PageHeader from "@/components/page-header"
 import PageFooter from "@/components/page-footer"
 import Link from "next/link"
+import { getAssetUrl } from "@/lib/utils"
 
 export default function TarareandoPage() {
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
-      <PageHeader title="Orquesta Típica Tarareando" />
+      {/* Hero Section with background image */}
+      <section 
+        className="relative flex items-end justify-center bg-[#4a8b8b] min-[800px]:min-h-[50vw] min-[1300px]:min-h-[36.87vw]"
+        style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
+      >
+        {/* Background image - BANNER-001 for screens < 1300px */}
+        <div 
+          className="absolute inset-0 bg-cover bg-[center_70%] min-[1300px]:hidden"
+          style={{ backgroundImage: `url(${getAssetUrl("/OTT-BANNER-001.jpg")})` }}
+        />
+        {/* Background image - BANNER-000 for screens >= 1300px */}
+        <div 
+          className="absolute inset-0 bg-center bg-no-repeat hidden min-[1300px]:block"
+          style={{ 
+            backgroundImage: `url(${getAssetUrl("/OTT-BANNER-000.jpg")})`,
+            backgroundSize: '100% auto'
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 text-center max-w-4xl mx-auto min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0">
+          <h1 
+            className="font-serif font-bold text-white opacity-90 whitespace-nowrap" 
+            style={{
+              fontSize: 'min(5vw, 3rem)'
+            }}
+          >
+            Orquesta Típica Tarareando
+          </h1>
+        </div>
+      </section>
 
       {/* Bio Section */}
       <section className="py-20 px-4 bg-[#f0f8f8]">
