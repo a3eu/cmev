@@ -143,7 +143,15 @@ export default function HomePage() {
                   <Calendar className="w-6 h-6 text-primary" />
                       <span className="text-sm text-muted-foreground">{formatEventDate(event.date)}</span>
                 </div>
-                    <CardTitle className="font-serif text-xl">{event.title}</CardTitle>
+                    {event.link ? (
+                      <CardTitle className="font-serif text-xl">
+                        <a href={event.link} target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer">
+                          {event.title}
+                        </a>
+                      </CardTitle>
+                    ) : (
+                      <CardTitle className="font-serif text-xl">{event.title}</CardTitle>
+                    )}
               </CardHeader>
               <CardContent>
                     {event.time && (
