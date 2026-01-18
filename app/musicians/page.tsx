@@ -143,7 +143,7 @@ export default function MusiciansPage() {
                   he studied voice, piano, and clarinet at a music school in Leningrad, USSR.
                   While pursuing a Physics degree at Caltech, he never missed a quarter of Caltech Glee Club
                   and Chamber Singers. He studied classical singing with Frieda Bernstein and Eugene Brancoveanu.
-                  After discovering Argentine tango as a social dance some over twenty years ago, it was only a matter of time
+                  After discovering Argentine tango as a social dance many years ago, it was only a matter of time
                   before he was drawn into singing tangos and playing the bandoneón, an instrument of German origin
                   that found its way to Argentina to become the soul of tango music.
                   Alexander attended Tango Music Institute at Reed College as vocalist, bandoneón player,
