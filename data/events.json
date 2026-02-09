@@ -1,6 +1,16 @@
 {
   "events": [
     {
+      "id": "2026-05-09-sfiaf-community-music-center",
+      "date": "2026-05-09",
+      "title": "Tango and Beyond: Orquesta Típica Tarareando at SF International Arts Festival",
+      "time": "4:30PM",
+      "location": "Community Music Center, 544 Capp St, San Francisco",
+      "city": "San Francisco",
+      "description": "Orquesta Típica Tarareando presents a range of classic and contemporary compositions at the San Francisco International Arts Festival.",
+      "link": "https://www.sfiaf.org/sfiaf2026_orquesta_tipica_tarareando"
+    },
+    {
       "id": "2026-02-14-sausalito-womens-club",
       "date": "2026-02-14",
       "title": "Valentango Concerto: Orquesta Típica Tarareando at Sausalito Women's Club",
