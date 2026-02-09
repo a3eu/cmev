@@ -1,42 +1,78 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calendar, Music, Piano, Users, NotebookPen, MapPin, Clock } from "lucide-react"
+import { Calendar, Music, Piano, Users, NotebookPen, MapPin, Clock, XCircle } from "lucide-react"
 import Link from "next/link"
 import PageFooter from "@/components/page-footer"
 import { getAssetUrl } from "@/lib/utils"
 import { getUpcomingEvents, getPastEvents, formatEventDate } from "@/lib/events"
 
 const HERO_OTT06_UNTIL = new Date("2026-05-10T23:59:59Z")
+const EARLY_BIRD_UNTIL = new Date("2026-04-01T00:00:00Z")
 
 export default function HomePage() {
   const useOtt06Layout = new Date() <= HERO_OTT06_UNTIL
+  const showEarlyBird = new Date() < EARLY_BIRD_UNTIL
+  const useApr1Banner = new Date() >= EARLY_BIRD_UNTIL
+  const [topBannerClosed, setTopBannerClosed] = useState(false)
 
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
       {useOtt06Layout ? (
-        /* Hero: ott-06 banner and layout until May 10, 2026 */
-        <section 
-          className="relative flex items-end justify-center bg-[#4a8b8b] min-h-[50vw]"
-          style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
-        >
-          <div 
-            className="absolute inset-0 bg-cover bg-no-repeat min-[1300px]:hidden"
-            style={{
-              backgroundImage: `url(${getAssetUrl("/ott-06.jpg")})`,
-              backgroundPosition: 'center 10%'
-            }}
-          />
-          <div 
-            className="absolute inset-0 bg-cover bg-no-repeat hidden min-[1300px]:block"
-            style={{ 
-              backgroundImage: `url(${getAssetUrl("/ott-06.jpg")})`,
-              backgroundPosition: 'top'
-            }}
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 text-left max-w-4xl mx-auto flex flex-row flex-wrap items-center gap-3 px-4 min-[800px]:flex-nowrap min-[800px]:text-center min-[800px]:items-center min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0 min-[800px]:max-w-6xl min-[800px]:px-4 min-[800px]:gap-4 min-[800px]:scale-[0.85] min-[800px]:origin-bottom-left">
+        /* Hero: may9 banner on top, then ott-06 banner and layout until May 10, 2026 */
+        <>
+          {!topBannerClosed && (
+            <div className="relative">
+              <a 
+                href="https://www.sfiaf.org/sfiaf2026_orquesta_tipica_tarareando" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <img 
+                  src={getAssetUrl(useApr1Banner ? "/may9banner-apr1.png" : "/may9banner.png")} 
+                  alt="May 9, 2026 — San Francisco International Arts Festival" 
+                  className="w-full h-auto block"
+                />
+              </a>
+              <div id="sfiaf-line" className="py-2 px-8 text-center bg-[#3e7a7a]/95 text-white text-sm min-[500px]:text-base font-medium">
+                <div className="max-w-6xl mx-auto">
+                  Orquesta Típica Tarareando plays at the <a href="https://www.sfiaf.org" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">San Francisco International Arts Festival</a> on <a href="https://www.sfiaf.org/sfiaf2026_orquesta_tipica_tarareando" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">May 9, 4:30pm</a>.
+                  {showEarlyBird && "EARLY BIRD "}<a href="https://sfiaf.vbotickets.com/event/Tango_and_Beyond_w_Orquesta_Tpica_Tarareando_SF_International_Arts_Festival/184150" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">tickets</a> on sale!
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={(e) => { e.preventDefault(); e.stopPropagation(); setTopBannerClosed(true) }}
+                className="absolute top-2 right-2 p-1 rounded-full bg-black/50 text-white hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+                aria-label="Close banner"
+              >
+                <XCircle className="w-6 h-6" strokeWidth={2} />
+              </button>
+            </div>
+          )}
+          <section 
+            className="relative flex items-end justify-center bg-[#4a8b8b] min-h-[50vw]"
+            style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
+          >
+            <div 
+              className="absolute inset-0 bg-cover bg-no-repeat min-[1300px]:hidden"
+              style={{
+                backgroundImage: `url(${getAssetUrl("/ott-06.jpg")})`,
+                backgroundPosition: 'center 10%'
+              }}
+            />
+            <div 
+              className="absolute inset-0 bg-cover bg-no-repeat hidden min-[1300px]:block"
+              style={{ 
+                backgroundImage: `url(${getAssetUrl("/ott-06.jpg")})`,
+                backgroundPosition: 'top'
+              }}
+            />
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="relative z-10 text-left max-w-4xl mx-auto flex flex-row flex-wrap items-center gap-3 px-4 min-[800px]:flex-nowrap min-[800px]:text-center min-[800px]:items-center min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0 min-[800px]:max-w-6xl min-[800px]:px-4 min-[800px]:gap-4 min-[800px]:scale-[0.85] min-[800px]:origin-bottom-left">
             <div 
               className="shrink-0 min-[800px]:!ml-[calc(25%_-_min(16vw,4.8rem))]"
               style={{ fontSize: 'min(8vw, 3.75rem)' }}
@@ -60,7 +96,8 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-        </section>
+          </section>
+        </>
       ) : (
         /* Hero: exact layout from before ott-06 (from May 11, 2026) */
         <section 
