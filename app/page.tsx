@@ -231,8 +231,19 @@ export default function HomePage() {
                 </div>
                     )}
                 <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-muted-foreground" />
-                      <span className="text-sm text-muted-foreground">{event.location}</span>
+                  <MapPin className="w-4 h-4 text-muted-foreground shrink-0" />
+                  {/\d/.test(event.location) ? (
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.location)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:underline"
+                    >
+                      {event.location}
+                    </a>
+                  ) : (
+                    <span className="text-sm text-muted-foreground">{event.location}</span>
+                  )}
                 </div>
                     {event.description && (
                 <CardDescription className="mb-4 space-y-2">
