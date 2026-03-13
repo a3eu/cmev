@@ -1,6 +1,22 @@
 {
   "events": [
     {
+      "id": "2026-06-18-ashkenaz-berkeley",
+      "date": "2026-06-18",
+      "title": "OT Tarareando at Ashkenaz Milonga",
+      "time": "8:30PM",
+      "location": "1317 San Pablo Ave, Berkeley, CA",
+      "city": "Berkeley"
+    },
+    {
+      "id": "2026-05-02-ocho-loco-santa-rosa",
+      "date": "2026-05-02",
+      "title": "OT Tarareando at Milonga Ocho Loco",
+      "time": "7PM",
+      "location": "3559 Airway Drive, Santa Rosa, CA",
+      "city": "Santa Rosa"
+    },
+    {
       "id": "2026-05-09-sfiaf-community-music-center",
       "date": "2026-05-09",
       "title": "Tango and Beyond: Orquesta Típica Tarareando at SF International Arts Festival",
