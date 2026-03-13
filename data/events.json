@@ -21,6 +21,27 @@
       "link": "https://www.montereytangomarathon.com/"
     },
     {
+      "id": "2026-01-26-palo-alto-private",
+      "date": "2026-01-26",
+      "title": "Cello + Bandoneón duo private concert",
+      "location": "Palo Alto, CA",
+      "city": "Palo Alto"
+    },
+    {
+      "id": "2026-03-09-sf-private",
+      "date": "2026-03-09",
+      "title": "Cello + Bandoneón duo private concert",
+      "location": "San Francisco, CA",
+      "city": "San Francisco"
+    },
+    {
+      "id": "2026-03-08-sf-private",
+      "date": "2026-03-08",
+      "title": "Cello + Bandoneón duo private concert",
+      "location": "San Francisco, CA",
+      "city": "San Francisco"
+    },
+    {
       "id": "2026-02-14-sausalito-womens-club",
       "date": "2026-02-14",
       "title": "Valentango Concerto: Orquesta Típica Tarareando at Sausalito Women's Club",
