@@ -32,7 +32,7 @@ export default function HomePage() {
                 className="block"
               >
                 <img 
-                  src={getAssetUrl(useApr1Banner ? "/may9banner-apr1.png" : "/may9banner.png")} 
+                  src={getAssetUrl(useApr1Banner ? "/may9banner-apr1.webp" : "/may9banner.webp")}
                   alt="May 9, 2026 — San Francisco International Arts Festival" 
                   className="w-full h-auto block"
                 />
@@ -60,14 +60,14 @@ export default function HomePage() {
             <div 
               className="absolute inset-0 bg-cover bg-no-repeat min-[1300px]:hidden"
               style={{
-                backgroundImage: `url(${getAssetUrl("/ott-06.jpg")})`,
+                backgroundImage: `url(${getAssetUrl("/ott-06.webp")})`,
                 backgroundPosition: 'center 10%'
               }}
             />
             <div 
               className="absolute inset-0 bg-cover bg-no-repeat hidden min-[1300px]:block"
               style={{ 
-                backgroundImage: `url(${getAssetUrl("/ott-06.jpg")})`,
+                backgroundImage: `url(${getAssetUrl("/ott-06.webp")})`,
                 backgroundPosition: 'top'
               }}
             />

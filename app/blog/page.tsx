@@ -45,25 +45,25 @@ export default function BlogPage() {
                   {/* Photo Gallery */}
                   <div className="mt-8 flex flex-col gap-3">
                     {/* Row 1 - full width */}
-                    <img src={getAssetUrl("/b2-2.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+                    <img loading="lazy" src={getAssetUrl("/b2-2.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
                     
                     {/* Row 2 - two images side by side, heights matched */}
                     <div className="flex gap-3 items-stretch">
                       <div className="w-[58%] overflow-hidden rounded-lg">
-                        <img 
+                        <img loading="lazy" 
                           src={getAssetUrl("/b2-3.jpg")} 
                           alt="2025 highlights" 
                           className="w-full h-full object-cover object-top"
                         />
                       </div>
-                      <img src={getAssetUrl("/b2-5.jpeg")} alt="2025 highlights" className="w-[42%] h-auto rounded-lg" />
+                      <img loading="lazy" src={getAssetUrl("/b2-5.webp")} alt="2025 highlights" className="w-[42%] h-auto rounded-lg" />
                     </div>
                     
                     {/* Row 3 - full width */}
-                    <img src={getAssetUrl("/b2-6.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+                    <img loading="lazy" src={getAssetUrl("/b2-6.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
                     
                     {/* Row 4 - full width */}
-                    <img src={getAssetUrl("/b2-4.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+                    <img loading="lazy" src={getAssetUrl("/b2-4.webp")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
                   </div>
 
                   {/* Video */}
@@ -99,7 +99,7 @@ export default function BlogPage() {
                 </CardHeader>
                 <CardContent className="px-8">
                   <div className="w-full max-w-2xl text-right">
-                    <img src={getAssetUrl("/20250504-453.jpg")} alt="concert photo" className="w-full h-full object-cover object-center" />
+                    <img loading="lazy" src={getAssetUrl("/20250504-453.jpg")} alt="concert photo" className="w-full h-full object-cover object-center" />
                     <span className="text-sm text-muted-foreground text-right">Photo <a href="https://www.instagram.com/akolb4/"
                                                                              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
                     >Alex Kolbasov</a></span>

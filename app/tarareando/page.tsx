@@ -213,25 +213,26 @@ export default function TarareandoPage() {
             {/* Photo Gallery */}
             <div className="mt-8 flex flex-col gap-3">
               {/* Row 1 - full width */}
-              <img src={getAssetUrl("/b2-2.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
-              
+              <img loading="lazy" src={getAssetUrl("/b2-2.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+
               {/* Row 2 - two images side by side, heights matched */}
               <div className="flex gap-3 items-stretch">
                 <div className="w-[58%] overflow-hidden rounded-lg">
-                  <img 
-                    src={getAssetUrl("/b2-3.jpg")} 
-                    alt="2025 highlights" 
+                  <img
+                    loading="lazy"
+                    src={getAssetUrl("/b2-3.jpg")}
+                    alt="2025 highlights"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <img src={getAssetUrl("/b2-5.jpeg")} alt="2025 highlights" className="w-[42%] h-auto rounded-lg" />
+                <img loading="lazy" src={getAssetUrl("/b2-5.webp")} alt="2025 highlights" className="w-[42%] h-auto rounded-lg" />
               </div>
-              
+
               {/* Row 3 - full width */}
-              <img src={getAssetUrl("/b2-6.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
-              
+              <img loading="lazy" src={getAssetUrl("/b2-6.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+
               {/* Row 4 - full width */}
-              <img src={getAssetUrl("/b2-4.jpg")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
+              <img loading="lazy" src={getAssetUrl("/b2-4.webp")} alt="2025 highlights" className="w-full h-auto rounded-lg" />
             </div>
           </div>
         </div>
