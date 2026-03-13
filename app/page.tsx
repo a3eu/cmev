@@ -473,30 +473,23 @@ export default function HomePage() {
 
       {/* Past Events Section */}
       <section className="py-20 px-4 bg-[#f0f8f8]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-12">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Past Events</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {getPastEvents().map((event) => (
-              <Card key={event.id}>
-                <CardHeader>
-                  <div className="flex items-center gap-4 mb-2">
-                    <Calendar className="w-6 h-6 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">{formatEventDate(event.date)}</span>
-                  </div>
-                  <CardTitle className="font-serif text-xl">{event.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">{event.city}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <ul className="space-y-2">
+            {getPastEvents().map((event) => {
+              const [year, month, day] = event.date.split("-");
+              const shortDate = `${parseInt(month)}.${parseInt(day)}.${year.slice(2)}`;
+              return (
+                <li key={event.id} className="text-base text-foreground">
+                  <span className="font-bold">{shortDate}</span>
+                  {" "}{event.title}{event.city ? `, ${event.city}` : ""}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
 
