@@ -12,7 +12,11 @@ const kaushanScript = Kaushan_Script({
 
 export const metadata: Metadata = {
   title: '¡Con música en vivo!',
-  description: '¡Con música en vivo! web site'
+  description: '¡Con música en vivo! web site',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
