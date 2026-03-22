@@ -63,7 +63,7 @@ export default function PageFooter() {
             </ul>
             <div className="flex gap-3 mt-4">
               <a
-                href="https://www.facebook.com/profile.php?id=61567797232060"
+                href="https://www.facebook.com/conmusicaenvivo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"
@@ -74,7 +74,7 @@ export default function PageFooter() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/orquestatarareando/"
+                href="https://instagram.com/orquestatarareando"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-200"

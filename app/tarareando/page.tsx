@@ -137,7 +137,7 @@ export default function TarareandoPage() {
           {/* Social Links */}
           <div className="flex gap-4 mt-8">
             <a
-              href="https://www.facebook.com/profile.php?id=61575113623112"
+              href="https://www.facebook.com/orquestatarareando/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-[#3e7a7a] hover:bg-[#4a8b8b] rounded-full flex items-center justify-center transition-colors duration-200"
@@ -148,7 +148,7 @@ export default function TarareandoPage() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/orquestatarareando/"
+              href="https://instagram.com/orquestatarareando"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-[#3e7a7a] hover:bg-[#4a8b8b] rounded-full flex items-center justify-center transition-colors duration-200"
