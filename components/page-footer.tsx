@@ -38,9 +38,9 @@ export default function PageFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/newsletter-signup" className="hover:text-white/80 transition-colors font-medium">
+                <a href="https://lp.constantcontactpages.com/sl/c8g81Dc" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors font-medium">
                   Newsletter
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

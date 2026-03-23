@@ -31,18 +31,18 @@ export default function NewsletterSignupPage() {
           {/*  </p>*/}
           {/*</div>*/}
 
-          <div className="bg-white rounded-lg shadow-lg p-2 mx-auto" style={{maxWidth: '800px'}}>
-            <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLScK-dWjARDlHZ4_nEmx3tsoipnjxtamSOJRNGuIjI_kvyqj6A/viewform?embedded=true"
-              width="100%" 
-              height="1200" 
-              frameBorder="0" 
-              marginHeight={0} 
-              marginWidth={0}
-              title="Newsletter Signup Form"
+          <div className="bg-white rounded-lg shadow-lg p-12 mx-auto text-center" style={{maxWidth: '800px'}}>
+            <p className="text-lg text-muted-foreground mb-8">
+              Join our mailing list to receive updates about upcoming performances and special events.
+            </p>
+            <a
+              href="https://lp.constantcontactpages.com/sl/c8g81Dc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-12 py-4 text-xl rounded-2xl transition-colors duration-200"
             >
-              Loading...
-            </iframe>
+              Sign Up for Our Newsletter
+            </a>
           </div>
 
           <div className="text-center mt-8">

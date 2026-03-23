@@ -187,9 +187,9 @@ export default function HomePage() {
               </Link>
             </li>
             <li>
-              <Link href="/newsletter-signup" className="hover:text-white/80 transition-colors font-medium">
+              <a href="https://lp.constantcontactpages.com/sl/c8g81Dc" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors font-medium">
                 Newsletter
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -275,7 +275,8 @@ export default function HomePage() {
           <div className="flex flex-col items-center p-4 md:p-16 gap-6">
             <Button
                 className="bg-[#166579] hover:bg-[#4e788b] text-white font-bold px-8 lg:py-10 sm:py-4 py-9 md:px-20 md:py-6 sm:text-3xl lg:text-5xl md:text-4xl rounded-2xl w-full max-w-4xl"
-                variant="outline"><Link href="/newsletter-signup">Join our mailing list! </Link></Button>
+                variant="outline"
+                onClick={() => window.open("https://lp.constantcontactpages.com/sl/c8g81Dc", "_blank")}>Join our mailing list!</Button>
           </div>
         </div>
       </section>
