@@ -90,6 +90,9 @@ export default function PageFooter() {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-sm text-white/80">© 2025 ¡Con música en vivo! All rights reserved.</p>
+          <p className="text-xs text-white/50 mt-2">
+            <Link href="/privacy-policy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
+          </p>
         </div>
       </div>
     </footer>
