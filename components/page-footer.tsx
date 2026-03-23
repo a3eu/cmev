@@ -6,7 +6,7 @@ export default function PageFooter() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4" style={{fontFamily: 'Kaushan Script, cursive'}}>¡Con música en vivo!</h3>
+            <h3 className="text-xl font-bold mb-4" style={{fontFamily: 'Kaushan Script, cursive'}}><Link href="/#top" className="hover:text-white/80 transition-colors">¡Con música en vivo!</Link></h3>
           </div>
 
           <div>
