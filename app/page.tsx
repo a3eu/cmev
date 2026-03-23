@@ -187,9 +187,9 @@ export default function HomePage() {
               </Link>
             </li>
             <li>
-              <a href="https://lp.constantcontactpages.com/sl/c8g81Dc" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors font-medium">
+              <Link href="/newsletter-signup" className="hover:text-white/80 transition-colors font-medium">
                 Newsletter
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

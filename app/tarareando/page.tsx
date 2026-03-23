@@ -94,9 +94,9 @@ export default function TarareandoPage() {
               </Link>
             </li>
             <li>
-              <a href="https://lp.constantcontactpages.com/sl/c8g81Dc" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors font-medium">
+              <Link href="/newsletter-signup" className="hover:text-white/80 transition-colors font-medium">
                 Newsletter
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -161,7 +161,7 @@ export default function TarareandoPage() {
           </div>
 
           <p className="text-muted-foreground mt-6">
-            Please <a href="https://lp.constantcontactpages.com/sl/c8g81Dc" target="_blank" rel="noopener noreferrer" className="underline text-blue-600 hover:text-blue-800">subscribe to our mailing list</a> or follow us on social media to stay up to date on our performance schedule.
+            Please <Link href="/newsletter-signup" className="underline text-blue-600 hover:text-blue-800">subscribe to our mailing list</Link> or follow us on social media to stay up to date on our performance schedule.
           </p>
 
           <p className="text-muted-foreground mt-4">
