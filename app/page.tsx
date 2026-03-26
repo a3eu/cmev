@@ -40,7 +40,7 @@ export default function HomePage() {
               <div id="sfiaf-line" className="py-2 px-8 text-center bg-[#3e7a7a]/95 text-white text-sm min-[500px]:text-base font-medium">
                 <div className="max-w-6xl mx-auto">
                   Orquesta Típica Tarareando plays at the <a href="https://www.sfiaf.org" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">San Francisco International Arts Festival</a> on <a href="https://www.sfiaf.org/sfiaf2026_orquesta_tipica_tarareando" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">May 9, 4:30pm</a>.
-                  {showEarlyBird && "EARLY BIRD "}<a href="https://sfiaf.vbotickets.com/event/Tango_and_Beyond_w_Orquesta_Tpica_Tarareando_SF_International_Arts_Festival/184150" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">tickets</a> on sale!
+                  {showEarlyBird && " EARLY BIRD "}<a href="https://sfiaf.vbotickets.com/event/Tango_and_Beyond_w_Orquesta_Tpica_Tarareando_SF_International_Arts_Festival/184150" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">tickets</a> on sale!
                 </div>
               </div>
               <button
