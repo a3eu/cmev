@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
       {useOtt06Layout ? (
-        /* Hero: may9 banner on top, then ott-06 banner and layout until May 10, 2026 */
+        /* Hero: may9 banner on top, then ott-06y7 banner and layout until May 11, 2026 */
         <>
           {!topBannerClosed && (
             <div className="relative">
@@ -60,14 +60,14 @@ export default function HomePage() {
             <div 
               className="absolute inset-0 bg-cover bg-no-repeat min-[1300px]:hidden"
               style={{
-                backgroundImage: `url(${getAssetUrl("/ott-06.webp")})`,
+                backgroundImage: `url(${getAssetUrl("/ott-06y7.webp")})`,
                 backgroundPosition: 'center 10%'
               }}
             />
-            <div 
+            <div
               className="absolute inset-0 bg-cover bg-no-repeat hidden min-[1300px]:block"
-              style={{ 
-                backgroundImage: `url(${getAssetUrl("/ott-06.webp")})`,
+              style={{
+                backgroundImage: `url(${getAssetUrl("/ott-06y7.webp")})`,
                 backgroundPosition: 'top'
               }}
             />
