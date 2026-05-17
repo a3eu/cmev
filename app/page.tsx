@@ -11,15 +11,79 @@ import { getUpcomingEvents, getPastEvents, formatEventDate } from "@/lib/events"
 
 const HERO_OTT06_UNTIL = new Date("2026-05-10T23:59:59Z")
 const EARLY_BIRD_UNTIL = new Date("2026-04-01T00:00:00Z")
+const SOLLA_LIZANA_UNTIL = new Date("2026-06-13T07:00:00Z") // June 12 11:59pm PT
 
 export default function HomePage() {
   const useOtt06Layout = new Date() <= HERO_OTT06_UNTIL
   const showEarlyBird = new Date() < EARLY_BIRD_UNTIL
   const useApr1Banner = new Date() >= EARLY_BIRD_UNTIL
   const [topBannerClosed, setTopBannerClosed] = useState(false)
+  const showSollaLizanaBanner = new Date() <= SOLLA_LIZANA_UNTIL
+  const [sollaLizanaBannerClosed, setSollaLizanaBannerClosed] = useState(false)
 
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
+      {showSollaLizanaBanner && !sollaLizanaBannerClosed && (
+        <div className="relative bg-[#0d1f1f]">
+          <div className="flex flex-col min-[800px]:flex-row">
+            {/* Photo — visible only on desktop */}
+            <div className="hidden min-[800px]:block min-[800px]:w-[22%] relative overflow-hidden">
+              <img
+                src={getAssetUrl("/solla-lizana.jpg")}
+                alt="Emilio Solla and Antonio Lizana"
+                className="absolute inset-0 w-full h-full object-cover object-top"
+              />
+            </div>
+            {/* Text */}
+            <div className="min-[800px]:w-[33%] flex flex-col justify-center px-6 py-5 text-white">
+              <p className="text-[#c9a84c] text-xs font-semibold uppercase tracking-widest mb-2">Upcoming Concert · June 12</p>
+              <h2 className="font-serif text-xl min-[800px]:text-2xl font-bold mb-1 leading-tight">
+                Emilio Solla &amp; Antonio Lizana
+              </h2>
+              <p className="text-base min-[800px]:text-lg font-serif italic text-[#c9a84c] mb-3">El Siempre Mar</p>
+              <p className="text-sm text-white/70 mb-4">A fusion of Tango, Flamenco, and Jazz</p>
+              <div className="text-sm text-white/75 mb-3 space-y-0.5">
+                <p>7:30PM · Gradus ad Parnassum</p>
+                <p>1527 South B Street, San Mateo</p>
+              </div>
+              <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-white/50 mb-5">
+                <a href="http://www.emiliosolla.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 underline underline-offset-2 transition-colors">Emilio Solla</a>
+                <a href="https://www.antoniolizanamusic.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 underline underline-offset-2 transition-colors">Antonio Lizana</a>
+              </div>
+              <div>
+                <a
+                  href="https://www.zeffy.com/en-US/ticketing/emilio-solla-and-antonio-lizana-el-siempre-mar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#c9a84c] hover:bg-[#b8973e] text-[#0d1f1f] font-semibold px-5 py-2 rounded text-sm transition-colors"
+                >
+                  Get Tickets
+                </a>
+              </div>
+            </div>
+            {/* Video — 16:9 responsive embed */}
+            <div className="w-full min-[800px]:w-[45%]">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/HwO33NVrmUs"
+                  title="Emilio Solla and Antonio Lizana — El Siempre Mar"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => setSollaLizanaBannerClosed(true)}
+            className="absolute top-2 right-2 p-1 rounded-full bg-black/50 text-white hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+            aria-label="Close banner"
+          >
+            <XCircle className="w-6 h-6" strokeWidth={2} />
+          </button>
+        </div>
+      )}
       {useOtt06Layout ? (
         /* Hero: may9 banner on top, then ott-06y7 banner and layout until May 11, 2026 */
         <>
