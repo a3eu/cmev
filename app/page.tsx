@@ -35,7 +35,7 @@ export default function HomePage() {
               />
             </div>
             {/* Text */}
-            <div className="min-[800px]:w-[33%] flex flex-col justify-center px-6 py-5 text-white">
+            <div className="order-2 min-[800px]:order-none min-[800px]:w-[33%] flex flex-col justify-center items-center px-6 py-5 text-white text-center">
               <p className="text-[#c9a84c] text-xs font-semibold uppercase tracking-widest mb-2">Upcoming Concert · June 12</p>
               <h2 className="font-serif text-xl min-[800px]:text-2xl font-bold mb-1 leading-tight">
                 Emilio Solla &amp; Antonio Lizana
@@ -62,7 +62,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Video — 16:9 responsive embed */}
-            <div className="w-full min-[800px]:w-[45%]">
+            <div className="order-1 min-[800px]:order-none w-full min-[800px]:w-[45%]">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   src="https://www.youtube.com/embed/HwO33NVrmUs"
