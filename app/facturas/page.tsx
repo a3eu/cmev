@@ -9,7 +9,7 @@ export default function FacturasPage() {
   const isPreRelease = new Date() < RELEASE_DATE
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
-      <PageHeader title="Facturas" />
+      <PageHeader title="Facturas (EP)" />
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row gap-10 items-start">

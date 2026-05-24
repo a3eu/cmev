@@ -13,6 +13,7 @@ const HERO_OTT06_UNTIL = new Date("2026-05-10T23:59:59Z")
 const EARLY_BIRD_UNTIL = new Date("2026-04-01T00:00:00Z")
 const SOLLA_LIZANA_UNTIL = new Date("2026-06-13T07:00:00Z") // June 12 11:59pm PT
 const FACTURAS_BANNER_UNTIL = new Date("2026-05-28T06:59:00Z") // May 27 11:59pm PT
+const FRILING_SHOW_FROM = new Date("2026-06-01T07:00:00Z")     // June 1 midnight PT
 
 export default function HomePage() {
   const useOtt06Layout = new Date() <= HERO_OTT06_UNTIL
@@ -22,6 +23,7 @@ export default function HomePage() {
   const showSollaLizanaBanner = new Date() <= SOLLA_LIZANA_UNTIL
   const [sollaLizanaBannerClosed, setSollaLizanaBannerClosed] = useState(false)
   const showFacturasBanner = new Date() <= FACTURAS_BANNER_UNTIL
+  const showFriling = new Date() >= FRILING_SHOW_FROM
 
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
@@ -268,9 +270,16 @@ export default function HomePage() {
               <ul className="absolute left-0 top-full mt-2 bg-[#3e7a7a] rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[160px] z-50">
                 <li>
                   <Link href="/facturas" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
-                    Facturas
+                    Facturas (EP)
                   </Link>
                 </li>
+                {showFriling && (
+                  <li>
+                    <Link href="/friling" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
+                      Friling (Single)
+                    </Link>
+                  </li>
+                )}
               </ul>
             </li>
             <li>

@@ -1,11 +1,14 @@
 import Link from "next/link"
 import { getAssetUrl } from "@/lib/utils"
 
+const FRILING_SHOW_FROM = new Date("2026-06-01T07:00:00Z") // June 1 midnight PT
+
 interface PageHeaderProps {
   title: string
 }
 
 export default function PageHeader({ title }: PageHeaderProps) {
+  const showFriling = new Date() >= FRILING_SHOW_FROM
   return (
     <>
       {/* Compact Header */}
@@ -73,9 +76,16 @@ export default function PageHeader({ title }: PageHeaderProps) {
               <ul className="absolute left-0 top-full mt-2 bg-[#3e7a7a] rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[160px] z-50">
                 <li>
                   <Link href="/facturas" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
-                    Facturas
+                    Facturas (EP)
                   </Link>
                 </li>
+                {showFriling && (
+                  <li>
+                    <Link href="/friling" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
+                      Friling (Single)
+                    </Link>
+                  </li>
+                )}
               </ul>
             </li>
             <li>
