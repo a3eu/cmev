@@ -103,6 +103,11 @@ export default function FacturasPage() {
                   </ul>
                 </div>
 
+                <div>
+                  <h3 className="text-xs font-semibold uppercase tracking-widest text-[#3e7a7a] mb-2">Acknowledgements</h3>
+                  <p>This recording was made possible by generous <a href="/ways-to-give" className="underline hover:opacity-70 transition-opacity">supporters</a> of ¡Con música en vivo!</p>
+                </div>
+
                 <p className="text-xs text-foreground/40">© 2026 Orquesta Típica Tarareando</p>
               </div>
             </div>
