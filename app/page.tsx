@@ -12,6 +12,7 @@ import { getUpcomingEvents, getPastEvents, formatEventDate } from "@/lib/events"
 const HERO_OTT06_UNTIL = new Date("2026-05-10T23:59:59Z")
 const EARLY_BIRD_UNTIL = new Date("2026-04-01T00:00:00Z")
 const SOLLA_LIZANA_UNTIL = new Date("2026-06-13T07:00:00Z") // June 12 11:59pm PT
+const FACTURAS_BANNER_UNTIL = new Date("2026-05-28T06:59:00Z") // May 27 11:59pm PT
 
 export default function HomePage() {
   const useOtt06Layout = new Date() <= HERO_OTT06_UNTIL
@@ -20,6 +21,7 @@ export default function HomePage() {
   const [topBannerClosed, setTopBannerClosed] = useState(false)
   const showSollaLizanaBanner = new Date() <= SOLLA_LIZANA_UNTIL
   const [sollaLizanaBannerClosed, setSollaLizanaBannerClosed] = useState(false)
+  const showFacturasBanner = new Date() <= FACTURAS_BANNER_UNTIL
 
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
@@ -84,6 +86,25 @@ export default function HomePage() {
           </button>
         </div>
       )}
+      {showFacturasBanner && (
+        <div className="bg-red-700 py-4 px-4">
+          <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-white text-center">
+            <span className="font-semibold">
+              <strong>FACTURAS</strong> (EP) by Orquesta Típica Tarareando is coming out May 26!
+            </span>
+            <a
+              href="https://music.apple.com/us/album/facturas-ep/6769608835"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-black text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-white/10 border border-white/30 transition-colors whitespace-nowrap"
+            >
+              <Music className="w-4 h-4" />
+              Listen on Apple Music
+            </a>
+          </div>
+        </div>
+      )}
+
       {useOtt06Layout ? (
         /* Hero: may9 banner on top, then ott-06y7 banner and layout until May 11, 2026 */
         <>
@@ -239,6 +260,18 @@ export default function HomePage() {
               <Link href="/musicians" className="hover:text-white/80 transition-colors font-medium">
                 Musicians
               </Link>
+            </li>
+            <li className="relative group">
+              <Link href="/recordings" className="hover:text-white/80 transition-colors font-medium">
+                Recordings
+              </Link>
+              <ul className="absolute left-0 top-full mt-2 bg-[#3e7a7a] rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[160px] z-50">
+                <li>
+                  <Link href="/facturas" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
+                    Facturas
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href="/ways-to-give" className="hover:text-white/80 transition-colors font-medium">
