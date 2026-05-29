@@ -12,7 +12,7 @@ import { getUpcomingEvents, getPastEvents, formatEventDate } from "@/lib/events"
 const HERO_OTT06_UNTIL = new Date("2026-05-10T23:59:59Z")
 const EARLY_BIRD_UNTIL = new Date("2026-04-01T00:00:00Z")
 const SOLLA_LIZANA_UNTIL = new Date("2026-06-13T07:00:00Z") // June 12 11:59pm PT
-const FACTURAS_BANNER_UNTIL = new Date("2026-05-28T06:59:00Z") // May 27 11:59pm PT
+const FACTURAS_BANNER_UNTIL = new Date("2026-06-12T06:59:00Z") // June 11 11:59pm PT
 const FRILING_SHOW_FROM = new Date("2026-06-01T07:00:00Z")     // June 1 midnight PT
 
 export default function HomePage() {
