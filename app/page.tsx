@@ -113,7 +113,7 @@ export default function HomePage() {
               Listen on Spotify
             </a>
             <a
-              href="https://music.youtube.com/watch?v=cjJqMHOBQG8&si=wGx6AkFQ48uz4xtB"
+              href="https://www.youtube.com/playlist?list=OLAK5uy_nyMBB_iJfXylB9QZabZi_lQ5z8kBkXObk"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#FF0000] text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-[#cc0000] transition-colors whitespace-nowrap"
