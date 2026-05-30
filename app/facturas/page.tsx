@@ -12,10 +12,19 @@ export default function FacturasPage() {
           <div className="flex flex-col md:flex-row gap-10 items-start">
             {/* Cover art */}
             <div className="flex-shrink-0 w-full md:w-80">
-              <img
-                src={getAssetUrl("/facturas-cover-1000.jpg")}
-                alt="Facturas cover art — Orquesta Típica Tarareando"
-                className="w-full rounded-lg shadow-xl"
+              <a href="https://tarareando.bandcamp.com/album/facturas" target="_blank" rel="noopener noreferrer">
+                <img
+                  src={getAssetUrl("/facturas-cover-1000.jpg")}
+                  alt="Facturas cover art — Orquesta Típica Tarareando"
+                  className="w-full rounded-lg shadow-xl"
+                />
+              </a>
+              <iframe
+                className="mt-3 w-full"
+                style={{ border: 0, height: '42px' }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=1400561283/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                seamless
+                title="Facturas by Orquesta Típica Tarareando"
               />
             </div>
 
@@ -26,6 +35,15 @@ export default function FacturasPage() {
               <p className="text-xl text-muted-foreground mb-6">Orquesta Típica Tarareando</p>
 
               <div className="flex flex-wrap gap-3 mb-8">
+                <a
+                  href="https://tarareando.bandcamp.com/album/facturas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#1DA0C3] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#1889a8] transition-colors"
+                >
+                  <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M0 18.75l7.437-13.5H24L16.563 18.75z"/></svg>
+                  Listen on Bandcamp
+                </a>
                 <a
                   href="https://music.apple.com/us/album/facturas-ep/6769608835"
                   target="_blank"
