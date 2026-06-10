@@ -16,7 +16,42 @@
       "title": "OT Tarareando at Ashkenaz Milonga",
       "time": "8:30PM",
       "location": "1317 San Pablo Ave, Berkeley, CA",
-      "city": "Berkeley"
+      "city": "Berkeley",
+      "link": "https://tickets.venuepilot.com/e/third-thursday-tango-2026-06-18-ashkenaz-music-dance-community-center-berkeley-f42c2e"
+    },
+    {
+      "id": "2026-07-25-sausalito-center-arts",
+      "date": "2026-07-25",
+      "title": "Orquesta Típica Tarareando: A Night of Argentine Soul",
+      "location": "Sausalito Center for the Arts, Sausalito, CA",
+      "city": "Sausalito",
+      "description": "An evening of Argentine tango music followed by an open dance floor.",
+      "link": "https://www.bespokebayarea.com/event-details/orquesta-tipica-a-night-of-argentine-soul-1"
+    },
+    {
+      "id": "2026-07-31-union-square-sf",
+      "date": "2026-07-31",
+      "title": "Tango in the Square",
+      "time": "5–8PM",
+      "location": "Union Square, San Francisco, CA",
+      "city": "San Francisco",
+      "description": "Free outdoor tango quartet performance at Union Square."
+    },
+    {
+      "id": "2026-08-20-333-market-sf",
+      "date": "2026-08-20",
+      "title": "People in Plazas Noontime Concert",
+      "time": "12PM",
+      "location": "333 Market Street, San Francisco, CA",
+      "city": "San Francisco",
+      "description": "Free outdoor noontime tango quartet concert."
+    },
+    {
+      "id": "2026-06-06-redwood-city-private",
+      "date": "2026-06-06",
+      "title": "Guitar + Bandoneón duo private concert",
+      "location": "Redwood City, CA",
+      "city": "Redwood City"
     },
     {
       "id": "2026-05-02-ocho-loco-santa-rosa",
