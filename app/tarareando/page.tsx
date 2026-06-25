@@ -170,6 +170,63 @@ export default function TarareandoPage() {
         </div>
       </section>
 
+      {/* Recordings Section */}
+      <section className="py-0 px-4 bg-[#f0f8f8] pb-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 gap-6">
+            {/* Facturas */}
+            <div className="flex flex-col">
+              <a href="https://tarareando.bandcamp.com/album/facturas" target="_blank" rel="noopener noreferrer">
+                <img
+                  src={getAssetUrl("/facturas-cover-1000.jpg")}
+                  alt="Facturas cover art — Orquesta Típica Tarareando"
+                  className="w-full rounded-lg shadow mb-3"
+                />
+              </a>
+              <iframe
+                style={{ border: 0, width: '100%', height: '42px' }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=1400561283/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                seamless
+                title="Facturas by Orquesta Típica Tarareando"
+              >
+                <a href="https://tarareando.bandcamp.com/album/facturas">Facturas by Orquesta Típica Tarareando</a>
+              </iframe>
+              <div className="mt-2">
+                <h3 className="text-sm font-serif font-bold text-foreground">Facturas</h3>
+                <Link href="/facturas" className="text-xs text-blue-600 hover:text-blue-800 underline">
+                  More info ↗
+                </Link>
+              </div>
+            </div>
+
+            {/* Friling */}
+            <div className="flex flex-col">
+              <a href="https://tarareando.bandcamp.com/track/friling" target="_blank" rel="noopener noreferrer">
+                <img
+                  src={getAssetUrl("/friling-cover-1000.jpg")}
+                  alt="Friling cover art — Orquesta Típica Tarareando"
+                  className="w-full rounded-lg shadow mb-3"
+                />
+              </a>
+              <iframe
+                style={{ border: 0, width: '100%', height: '42px' }}
+                src="https://bandcamp.com/EmbeddedPlayer/track=2894315612/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                seamless
+                title="Friling by Orquesta Típica Tarareando"
+              >
+                <a href="https://tarareando.bandcamp.com/track/friling">Friling by Orquesta Típica Tarareando</a>
+              </iframe>
+              <div className="mt-2">
+                <h3 className="text-sm font-serif font-bold text-foreground">Friling</h3>
+                <Link href="/friling" className="text-xs text-blue-600 hover:text-blue-800 underline">
+                  More info ↗
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Videos Section */}
       <section className="py-20 px-4 bg-[#f0f8f8]">
         <div className="max-w-4xl mx-auto">
