@@ -1,258 +1,54 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calendar, Music, Piano, Users, NotebookPen, MapPin, Clock, XCircle } from "lucide-react"
+import { Calendar, Music, Piano, Users, NotebookPen, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
 import PageFooter from "@/components/page-footer"
 import { getAssetUrl } from "@/lib/utils"
 import { getUpcomingEvents, getPastEvents, formatEventDate } from "@/lib/events"
 
-const HERO_OTT06_UNTIL = new Date("2026-05-10T23:59:59Z")
-const EARLY_BIRD_UNTIL = new Date("2026-04-01T00:00:00Z")
-const SOLLA_LIZANA_UNTIL = new Date("2026-06-13T07:00:00Z") // June 12 11:59pm PT
-const FACTURAS_BANNER_UNTIL = new Date("2026-06-12T06:59:00Z") // June 11 11:59pm PT
-const FRILING_SHOW_FROM = new Date("2026-06-01T07:00:00Z")     // June 1 midnight PT
-
 export default function HomePage() {
-  const useOtt06Layout = new Date() <= HERO_OTT06_UNTIL
-  const showEarlyBird = new Date() < EARLY_BIRD_UNTIL
-  const useApr1Banner = new Date() >= EARLY_BIRD_UNTIL
-  const [topBannerClosed, setTopBannerClosed] = useState(false)
-  const showSollaLizanaBanner = new Date() <= SOLLA_LIZANA_UNTIL
-  const [sollaLizanaBannerClosed, setSollaLizanaBannerClosed] = useState(false)
-  const showFacturasBanner = new Date() <= FACTURAS_BANNER_UNTIL
-  const showFriling = new Date() >= FRILING_SHOW_FROM
-
   return (
     <div className="min-h-screen bg-[#b0c4c4]">
-      {showSollaLizanaBanner && !sollaLizanaBannerClosed && (
-        <div className="relative bg-[#0d1f1f]">
-          <div className="flex flex-col min-[800px]:flex-row">
-            {/* Photo — visible only on desktop */}
-            <div className="hidden min-[800px]:block min-[800px]:w-[22%] relative overflow-hidden">
-              <img
-                src={getAssetUrl("/solla-lizana.jpg")}
-                alt="Emilio Solla and Antonio Lizana"
-                className="absolute inset-0 w-full h-full object-cover object-top"
-              />
-            </div>
-            {/* Text */}
-            <div className="order-2 min-[800px]:order-none min-[800px]:w-[33%] flex flex-col justify-center items-center px-6 py-5 text-white text-center">
-              <p className="text-[#c9a84c] text-xs font-semibold uppercase tracking-widest mb-2">Upcoming Concert · June 12</p>
-              <h2 className="font-serif text-xl min-[800px]:text-2xl font-bold mb-1 leading-tight">
-                Emilio Solla &amp; Antonio Lizana
-              </h2>
-              <p className="text-base min-[800px]:text-lg font-serif italic text-[#c9a84c] mb-3">El Siempre Mar</p>
-              <p className="text-sm text-white/70 mb-4">A fusion of Tango, Flamenco, and Jazz</p>
-              <div className="text-sm text-white/75 mb-3 space-y-0.5">
-                <p>7:30PM · Gradus ad Parnassum</p>
-                <p>1527 South B Street, San Mateo</p>
-              </div>
-              <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-white/50 mb-5">
-                <a href="http://www.emiliosolla.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 underline underline-offset-2 transition-colors">Emilio Solla</a>
-                <a href="https://www.antoniolizanamusic.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 underline underline-offset-2 transition-colors">Antonio Lizana</a>
-              </div>
-              <div>
-                <a
-                  href="https://www.zeffy.com/en-US/ticketing/emilio-solla-and-antonio-lizana-el-siempre-mar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#c9a84c] hover:bg-[#b8973e] text-[#0d1f1f] font-semibold px-5 py-2 rounded text-sm transition-colors"
-                >
-                  Get Tickets
-                </a>
-              </div>
-            </div>
-            {/* Video — 16:9 responsive embed */}
-            <div className="order-1 min-[800px]:order-none w-full min-[800px]:w-[45%]">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  src="https://www.youtube.com/embed/HwO33NVrmUs"
-                  title="Emilio Solla and Antonio Lizana — El Siempre Mar"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                />
-              </div>
-            </div>
+      <section
+        className="relative flex items-end justify-center bg-[#4a8b8b] min-[800px]:min-h-[50vw] min-[1300px]:min-h-[36.87vw]"
+        style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-[center_70%] min-[1300px]:hidden"
+          style={{ backgroundImage: `url(${getAssetUrl("/OTT-BANNER-001.jpg")})` }}
+        />
+        <div
+          className="absolute inset-0 bg-center bg-no-repeat hidden min-[1300px]:block"
+          style={{
+            backgroundImage: `url(${getAssetUrl("/OTT-BANNER-000.jpg")})`,
+            backgroundSize: '100% auto'
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 text-center max-w-4xl mx-auto flex flex-col min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0 min-[800px]:max-w-6xl min-[800px]:px-4 min-[800px]:flex-row min-[800px]:items-center min-[800px]:gap-4 min-[800px]:scale-[0.85] min-[800px]:origin-bottom-left">
+          <div className="min-[800px]:!ml-0" style={{ marginLeft: 'calc(25% - min(16vw, 4.8rem))' }}>
+            <img
+              src={getAssetUrl("/cmev-logo-web-1.png")}
+              alt="¡Con música en vivo! Logo"
+              className="object-contain opacity-90"
+              style={{ width: 'min(32vw, 9.6rem)', height: 'min(32vw, 9.6rem)', marginBottom: 'min(1.5rem, 4vw)' }}
+            />
           </div>
-          <button
-            type="button"
-            onClick={() => setSollaLizanaBannerClosed(true)}
-            className="absolute top-2 right-2 p-1 rounded-full bg-black/50 text-white hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white/50"
-            aria-label="Close banner"
-          >
-            <XCircle className="w-6 h-6" strokeWidth={2} />
-          </button>
-        </div>
-      )}
-      {showFacturasBanner && (
-        <div className="bg-red-700 py-4 px-4">
-          <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-white text-center">
-            <span className="font-semibold">
-              <a href="/facturas" className="underline hover:opacity-80 transition-opacity"><strong>FACTURAS</strong></a> (EP) by Orquesta Típica Tarareando is out!
-            </span>
-            <a
-              href="https://tarareando.bandcamp.com/album/facturas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#1DA0C3] text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-[#1889a8] transition-colors whitespace-nowrap"
+          <div className="min-[800px]:text-left">
+            <h1
+              className="font-bold text-white whitespace-nowrap opacity-90"
+              style={{ fontFamily: 'Kaushan Script, cursive', fontSize: 'min(8vw, 3.75rem)', marginBottom: 'min(1rem, 3vw)' }}
             >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M0 18.75l7.437-13.5H24L16.563 18.75z"/></svg>
-              Bandcamp
-            </a>
-            <a
-              href="https://music.apple.com/us/album/facturas-ep/6769608835?at=1001l3QqW"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-black text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-white/10 border border-white/30 transition-colors whitespace-nowrap"
-            >
-              <Music className="w-4 h-4" />
-              Apple Music
-            </a>
-            <a
-              href="https://open.spotify.com/album/5ndYTQXmdmfdbYSDihHzvs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#1DB954] text-black text-sm font-medium px-4 py-1.5 rounded-full hover:bg-[#1aa34a] transition-colors whitespace-nowrap"
-            >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-              Spotify
-            </a>
-            <a
-              href="https://www.youtube.com/playlist?list=OLAK5uy_nyMBB_iJfXylB9QZabZi_lQ5z8kBkXObk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#FF0000] text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-[#cc0000] transition-colors whitespace-nowrap"
-            >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              YouTube Music
-            </a>
+              ¡Con música en vivo!
+            </h1>
+            <p style={{ opacity: 0.8, fontSize: 'min(4vw, 1.25rem)' }} className="font-serif font-bold text-white max-w-2xl whitespace-nowrap">
+              LIFE IS BETTER WITH LIVE MUSIC
+            </p>
           </div>
         </div>
-      )}
-
-      {useOtt06Layout ? (
-        /* Hero: may9 banner on top, then ott-06y7 banner and layout until May 11, 2026 */
-        <>
-          {!topBannerClosed && (
-            <div className="relative">
-              <a 
-                href="https://www.sfiaf.org/sfiaf2026_orquesta_tipica_tarareando" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <img 
-                  src={getAssetUrl(useApr1Banner ? "/may9banner-apr1.webp" : "/may9banner.webp")}
-                  alt="May 9, 2026 — San Francisco International Arts Festival" 
-                  className="w-full h-auto block"
-                />
-              </a>
-              <div id="sfiaf-line" className="py-2 px-8 text-center bg-[#3e7a7a]/95 text-white text-sm min-[500px]:text-base font-medium">
-                <div className="max-w-6xl mx-auto">
-                  Orquesta Típica Tarareando plays at the <a href="https://www.sfiaf.org" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">San Francisco International Arts Festival</a> on <a href="https://www.sfiaf.org/sfiaf2026_orquesta_tipica_tarareando" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">May 9, 4:30pm</a>.
-                  {showEarlyBird && " EARLY BIRD "}<a href="https://sfiaf.vbotickets.com/event/Tango_and_Beyond_w_Orquesta_Tpica_Tarareando_SF_International_Arts_Festival/184150" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">tickets</a> on sale!
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={(e) => { e.preventDefault(); e.stopPropagation(); setTopBannerClosed(true) }}
-                className="absolute top-2 right-2 p-1 rounded-full bg-black/50 text-white hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white/50"
-                aria-label="Close banner"
-              >
-                <XCircle className="w-6 h-6" strokeWidth={2} />
-              </button>
-            </div>
-          )}
-          <section 
-            className="relative flex items-end justify-center bg-[#4a8b8b] min-h-[50vw]"
-            style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
-          >
-            <div 
-              className="absolute inset-0 bg-cover bg-no-repeat min-[1300px]:hidden"
-              style={{
-                backgroundImage: `url(${getAssetUrl("/ott-06y7.webp")})`,
-                backgroundPosition: 'center 10%'
-              }}
-            />
-            <div
-              className="absolute inset-0 bg-cover bg-no-repeat hidden min-[1300px]:block"
-              style={{
-                backgroundImage: `url(${getAssetUrl("/ott-06y7.webp")})`,
-                backgroundPosition: 'top'
-              }}
-            />
-            <div className="absolute inset-0 bg-black/40" />
-            <div className="relative z-10 text-left max-w-4xl mx-auto flex flex-row flex-wrap items-center gap-3 px-4 min-[800px]:flex-nowrap min-[800px]:text-center min-[800px]:items-center min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0 min-[800px]:max-w-6xl min-[800px]:px-4 min-[800px]:gap-4 min-[800px]:scale-[0.85] min-[800px]:origin-bottom-left">
-            <div 
-              className="shrink-0 min-[800px]:!ml-[calc(25%_-_min(16vw,4.8rem))]"
-              style={{ fontSize: 'min(8vw, 3.75rem)' }}
-            >
-              <img 
-                src={getAssetUrl("/cmev-logo-web-1.png")} 
-                alt="¡Con música en vivo! Logo" 
-                className="object-contain opacity-90"
-                style={{ width: '2.56em', height: '2.56em' }}
-              />
-            </div>
-            <div className="min-w-0 min-[800px]:text-left">
-              <h1 
-                className="font-bold text-white whitespace-nowrap opacity-90" 
-                style={{ fontFamily: 'Kaushan Script, cursive', fontSize: 'min(8vw, 3.75rem)', marginBottom: 'min(1rem, 3vw)' }}
-              >
-                ¡Con música en vivo!
-              </h1>
-              <p style={{ opacity: 0.8, fontSize: 'min(4vw, 1.25rem)' }} className="font-serif font-bold text-white max-w-2xl whitespace-nowrap">
-                LIFE IS BETTER WITH LIVE MUSIC
-              </p>
-            </div>
-          </div>
-          </section>
-        </>
-      ) : (
-        /* Hero: exact layout from before ott-06 (from May 11, 2026) */
-        <section 
-          className="relative flex items-end justify-center bg-[#4a8b8b] min-[800px]:min-h-[50vw] min-[1300px]:min-h-[36.87vw]"
-          style={{ paddingTop: 'min(4rem, 8vw)', paddingBottom: 'min(2rem, 4vw)', paddingLeft: '1rem', paddingRight: '1rem' }}
-        >
-          <div 
-            className="absolute inset-0 bg-cover bg-[center_70%] min-[1300px]:hidden"
-            style={{ backgroundImage: `url(${getAssetUrl("/OTT-BANNER-001.jpg")})` }}
-          />
-          <div 
-            className="absolute inset-0 bg-center bg-no-repeat hidden min-[1300px]:block"
-            style={{ 
-              backgroundImage: `url(${getAssetUrl("/OTT-BANNER-000.jpg")})`,
-              backgroundSize: '100% auto'
-            }}
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 text-center max-w-4xl mx-auto flex flex-col min-[800px]:absolute min-[800px]:bottom-[5%] min-[800px]:left-0 min-[800px]:right-0 min-[800px]:max-w-6xl min-[800px]:px-4 min-[800px]:flex-row min-[800px]:items-center min-[800px]:gap-4 min-[800px]:scale-[0.85] min-[800px]:origin-bottom-left">
-            <div className="min-[800px]:!ml-0" style={{ marginLeft: 'calc(25% - min(16vw, 4.8rem))' }}>
-              <img 
-                src={getAssetUrl("/cmev-logo-web-1.png")} 
-                alt="¡Con música en vivo! Logo" 
-                className="object-contain opacity-90"
-                style={{ width: 'min(32vw, 9.6rem)', height: 'min(32vw, 9.6rem)', marginBottom: 'min(1.5rem, 4vw)' }}
-              />
-            </div>
-            <div className="min-[800px]:text-left">
-              <h1 
-                className="font-bold text-white whitespace-nowrap opacity-90" 
-                style={{ fontFamily: 'Kaushan Script, cursive', fontSize: 'min(8vw, 3.75rem)', marginBottom: 'min(1rem, 3vw)' }}
-              >
-                ¡Con música en vivo!
-              </h1>
-              <p style={{ opacity: 0.8, fontSize: 'min(4vw, 1.25rem)' }} className="font-serif font-bold text-white max-w-2xl whitespace-nowrap">
-                LIFE IS BETTER WITH LIVE MUSIC
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
+      </section>
 
       {/* Navigation Bar */}
       <nav className="bg-[#3e7a7a] py-4 px-4 sticky top-0 z-50">
@@ -300,13 +96,11 @@ export default function HomePage() {
                     Facturas (EP)
                   </Link>
                 </li>
-                {showFriling && (
-                  <li>
-                    <Link href="/friling" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
-                      Friling (Single)
-                    </Link>
-                  </li>
-                )}
+                <li>
+                  <Link href="/friling" className="block px-4 py-2 hover:bg-[#4a8b8b] transition-colors whitespace-nowrap">
+                    Friling (Single)
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>
