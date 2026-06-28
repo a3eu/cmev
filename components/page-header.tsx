@@ -70,7 +70,8 @@ export default function PageHeader({ title }: PageHeaderProps) {
               </Link>
             </li>
             <li className="relative group">
-              <Link href="/recordings" className="hover:text-white/80 transition-colors font-medium">
+              <Link href="/recordings" className="hover:text-white/80 transition-colors font-medium inline-flex items-center gap-2">
+                <span className="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded" style={{transform: 'rotate(-4deg)'}}>NEW</span>
                 Recordings
               </Link>
               <ul className="absolute left-0 top-full mt-2 bg-[#3e7a7a] rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[160px] z-50">
