@@ -215,7 +215,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">About us</h2>
             <p className="text-lg md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              We are a 501(c)3 nonprofit with mission to support live performances and education in Argentine Tango and Modern Chamber Music throughout the San Francisco Bay Area and beyond
+              We are a 501(c)3 nonprofit with a mission to support live performances — and the recording projects and education that further develop the artists and ensembles behind them — in Argentine Tango and Modern Chamber Music throughout the San Francisco Bay Area and beyond.
             </p>
           </div>
 
