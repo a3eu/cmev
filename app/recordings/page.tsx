@@ -35,7 +35,7 @@ export default function RecordingsPage() {
             </div>
             <div className="flex-1">
               <p className="text-sm font-semibold uppercase tracking-widest text-[#3e7a7a] mb-1">EP · 2026</p>
-              <h2 className="font-serif text-4xl font-bold text-foreground mb-1">Facturas</h2>
+              <h2 className="font-serif text-4xl font-bold text-foreground mb-1"><a href="/facturas" className="hover:opacity-70 transition-opacity">Facturas</a></h2>
               <p className="text-xl text-muted-foreground mb-6">Orquesta Típica Tarareando</p>
               <div className="flex flex-wrap gap-3 mb-8">
                 <a
@@ -126,7 +126,7 @@ export default function RecordingsPage() {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-semibold uppercase tracking-widest text-[#3e7a7a] mb-1">{frilingPreRelease ? "Dropping June 12!" : "Single · 2026"}</p>
-                  <h2 className="font-serif text-4xl font-bold text-foreground mb-1">Friling</h2>
+                  <h2 className="font-serif text-4xl font-bold text-foreground mb-1"><a href="/friling" className="hover:opacity-70 transition-opacity">Friling</a></h2>
                   <p className="text-xl text-muted-foreground mb-6">Orquesta Típica Tarareando</p>
                   <div className="flex flex-wrap gap-3 mb-8">
                     {!frilingPreRelease && (
