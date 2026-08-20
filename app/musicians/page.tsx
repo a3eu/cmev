@@ -270,6 +270,7 @@ export default function MusiciansPage() {
                 </div>
 
                 <p className="mt-4 text-muted-foreground mb-4">
+                  Chris Johnson was introduced to tango by his friend and colleague from CSUN, Pablo Motta, the son of Argentine tango pianist Pepe Motta. After finishing degrees in double bass performance from CSUN and The Boston Conservatory, and playing many orchestra gigs and a few milongas, Mr. Johnson moved to Buenos Aires in 2009 to focus on the rhythms and style of tango. While there, he learned from the fire, a la parrilla, the streets of San Telmo, in the clubs, the bars, and in the milongas. He teamed up with singer songwriter Juan Seren, and with fortunate luck recorded on his debut album Suerte Negra. In 2010 Mr. Johnson moved back to California where he played extensively with Seth Asarnow y su sexteto tipico, a favorite tango orchestra of Bay Area milongas through 2020. Today he plays in several local Bay Area tango ensembles including Tarareando, Cristal, Ramilonga, and Alex Roitman sextet.
                 </p>
               </CardContent>
             </Card>
