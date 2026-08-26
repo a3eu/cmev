@@ -73,6 +73,14 @@
       "link": "https://www.facebook.com/events/1471098021181400/"
     },
     {
+      "id": "2026-12-05-ocho-loco-santa-rosa",
+      "date": "2026-12-05",
+      "title": "OT Tarareando at Milonga Ocho Loco",
+      "time": "6-10PM",
+      "location": "3559 Airway Drive, Santa Rosa, CA",
+      "city": "Santa Rosa"
+    },
+    {
       "id": "2026-05-09-sfiaf-community-music-center",
       "date": "2026-05-09",
       "title": "Tango and Beyond: Orquesta Típica Tarareando at SF International Arts Festival",
@@ -99,6 +107,24 @@
       "location": "Hyatt Regency Monterey, 1 Old Golf Course Rd, Monterey, CA 93940",
       "city": "Monterey",
       "link": "https://www.montereytangomarathon.com/"
+    },
+    {
+      "id": "2026-09-12-milonga-sentimental-carla-rossi",
+      "date": "2026-09-12",
+      "title": "Milonga Sentimental with World Champions Carla Rossi and Jose Luis Salvo and Live Music by OT Tarareando",
+      "location": "217 S Claremont St, San Mateo, CA 94401",
+      "city": "San Mateo",
+      "link": "https://www.facebook.com/events/2107079860228048/"
+    },
+    {
+      "id": "2026-09-13-homecoming-service-san-anselmo",
+      "date": "2026-09-13",
+      "title": "Homecoming Service",
+      "time": "11AM",
+      "location": "72 Kensington Road, San Anselmo, CA 94960",
+      "city": "San Anselmo",
+      "description": "OT Tarareando will play a selection of tangos and accompany the Chancel Choir in several pieces.",
+      "link": "https://www.togetherweserve.org/"
     },
     {
       "id": "2026-01-26-palo-alto-private",
@@ -140,6 +166,25 @@
       "city": "Palo Alto",
       "description": "Tea & Tango THANKSGIVING MILONGA. All Day Milonga, Potluck, Live Music & our 3 Year Anniversary! Orquesta Típica Tarareando plays at 8PM.",
       "link": "https://www.feelingflow.org/thanksgiving-milonga"
+    },
+    {
+      "id": "2026-11-17-jcc-palo-alto-tango-beyond",
+      "date": "2026-11-17",
+      "title": "Tango and Beyond | Music in the Afternoon",
+      "time": "1:00 PM – 2:00 PM",
+      "location": "Albert and Janet Schultz Cultural Arts Hall (Building F), Oshman Family JCC, Taube Koret Campus for Jewish Life, 3921 Fabian Way, Palo Alto, CA 94303",
+      "city": "Palo Alto",
+      "description": "Orquesta Típica Tarareando presents a range of classic and contemporary compositions, illustrating the evolution and breadth of tango from its golden age to the present day. The one-hour concert features traditional Golden Age tangos, original arrangements, and modern works. Coffee and refreshments follow in the lobby.",
+      "link": "https://paloaltojcc.org/event-detail/es_2301969/"
+    },
+    {
+      "id": "2026-11-17-la-pista",
+      "date": "2026-11-17",
+      "title": "Orquesta Típica Tarareando at La Pista",
+      "time": "7–11PM",
+      "location": "3450 3rd St #5H, San Francisco, CA 94124",
+      "city": "San Francisco",
+      "description": "Live music starts at 9:30PM."
     },
     {
       "id": "2025-11-18-jcc-palo-alto",
